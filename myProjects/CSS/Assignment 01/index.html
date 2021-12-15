@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 01</title>
-
+    <title>CSS Assignment 01</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <style>
         body > section {
             position: absolute;
@@ -63,8 +63,6 @@
             bottom: 0;
             right: 0;
             border-top-left-radius: 100%;
-
-
         }
 
         body > div:nth-child(9) {
@@ -72,6 +70,34 @@
             right: 0;
             left: 0;
             top: 0;
+            margin: auto;
+        }
+        div>div{
+            background: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+        }
+        body > div:nth-child(10) {
+            border-bottom-right-radius: 100%;
+            border-bottom-left-radius: 100%;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+        }
+        body > div:nth-child(11) {
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            right: 0;
+            left: 0;
+            bottom: 0;
             margin: auto;
         }
     </style>
@@ -83,11 +109,19 @@
 <section></section>
 <section></section>
 
+<!--circle-->
 <div></div>
 <div></div>
 <div></div>
 <div></div>
+<!--center box-->
+<div>
+    <div></div>
+</div>
 
+<!--top center circle-->
+<div></div>
+<!--bottom center circle-->
 <div></div>
 
 </body>
