@@ -8,43 +8,49 @@
     <meta name="theme-color" content="Green">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <style>
-        *{
+        * {
             color: antiquewhite;
         }
-        header{
+
+        header {
             position: relative;
-            height: 80px;
+            height: 60px;
             background: #171515;
 
         }
-        body>main>section{
+
+        body > main > section {
             height: 100vh;
             background-image: url("assets/image/blackBackground.jpg");
         }
-        p,pre,h2,h3 {
+
+        p, pre, h2, h3, hr {
             margin: 0;
             font-family: monospace;
         }
-        h2{
+
+        h2 {
             font-size: 30px;
         }
-        body>header>h2{
+
+        body > header > h2 {
             position: absolute;
             font-weight: bold;
             font-size: 25px;
-            padding: 25px 0 0 25px;
+            padding: 13px 0 0 25px;
         }
+
         header > ul {
             position: absolute;
             right: 30px;
-            bottom: 0;
             font-size: 24px;
             font-family: cursive;
             list-style: none;
+            margin: 0;
         }
 
         header > ul > li {
-            padding: 0 10px 0 10px;
+            padding: 15px 10px 0 10px;
             display: inline-block;
         }
 
@@ -53,19 +59,46 @@
             color: deepskyblue;
         }
 
-
-        body>main>section>section>div{
+        body > main > section > section > div {
             position: absolute;
             margin-top: 18vh;
         }
 
-        body>main>section>section>div>ul{
+        body > main > section > section > div > ul {
             list-style: none;
             font-family: monospace;
             font-size: 65px;
         }
-        body>main>section>section>div>ul>li:nth-child(1):first-letter{
+
+        body > main > section > section > div > ul > li:nth-child(1):first-letter {
             color: deepskyblue;
+        }
+
+        body>main>section:nth-child(1){
+            width: 38px;
+            height: 160px;
+            position: fixed;
+            right: 10px;
+            bottom: 20vh;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background: rgba(0,0,0,0);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+        }
+        body>main>section:nth-child(1)>div{
+            height: 100%;
+            background-size: contain;
+        }
+        body>main>section:nth-child(1)>div:nth-child(1){
+            background-image: url("assets/image/icon/github.png");
+        }body>main>section:nth-child(1)>div:nth-child(2){
+            background-image: url("assets/image/icon/linkedin.png");
+        }body>main>section:nth-child(1)>div:nth-child(3){
+            background-image: url("assets/image/icon/facebook.png");
+        }body>main>section:nth-child(1)>div:nth-child(4){
+            background-image: url("assets/image/icon/whatsapp.png");
         }
     </style>
 
@@ -73,7 +106,6 @@
 <body>
 
 <header>
-
     <h2>Sadeepa Medhan</h2>
     <ul>
         <li>Home</li>
@@ -86,18 +118,23 @@
 </header>
 
 <main>
-
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
     <section><!--<h2>Home</h2>-->
         <section>
             <div>
                 <ul>
                     <li>HELLO, I'm</li>
-                    <li>SADEEPA MEDHAN </li>
+                    <li>SADEEPA MEDHAN</li>
                     <li>SUGEESHWARA</li>
                 </ul>
             </div>
             <aside>
-<!--                <img src="assets/image/myProf.png" width="300" >-->
+                <!--                <img src="assets/image/myProf.png" width="300" >-->
             </aside>
         </section>
 
@@ -114,7 +151,7 @@
     <hr>
     <section>
         <h2>HERE'RE MY <br>
-        SKILLS</h2>
+            SKILLS</h2>
         <section>
             <h3>Tools</h3>
         </section>
