@@ -40,6 +40,7 @@
             padding: 13px 0 0 25px;
         }
 
+        /*----------navigation list-----------*/
         header > ul {
             position: absolute;
             right: 30px;
@@ -59,22 +60,38 @@
             color: deepskyblue;
         }
 
-        body > main > section > section > div {
+
+        /*-------my name---------*/
+        body > main > section:nth-child(2) > div {
             position: absolute;
             margin-top: 18vh;
         }
 
-        body > main > section > section > div > ul {
+        body > main  section > div > ul {
             list-style: none;
             font-family: monospace;
             font-size: 65px;
         }
 
-        body > main > section > section > div > ul > li:nth-child(1):first-letter {
+        body > main > section > div > ul > li:nth-child(1):first-letter {
             color: deepskyblue;
         }
 
-        body>main>section:nth-child(1){
+        /*-----my image-------*/
+        body > main > section:nth-child(2) {
+            position: relative;
+        }
+
+        body > main > section:nth-child(2) > aside > img {
+            position: absolute;
+            width: 450px;
+            right: 20vw;
+            bottom: 0;
+            margin:auto;
+        }
+
+        /*------------side button--------------*/
+        body > main > section:nth-child(1) {
             width: 38px;
             height: 160px;
             position: fixed;
@@ -83,22 +100,50 @@
             margin: auto;
             display: flex;
             flex-direction: column;
-            background: rgba(0,0,0,0);
+            background: rgba(0, 0, 0, 0);
             border: 1px solid rgba(255, 255, 255, 0.9);
             border-radius: 10px;
         }
-        body>main>section:nth-child(1)>div{
+
+        body > main > section:nth-child(1) > div {
             height: 100%;
             background-size: contain;
         }
-        body>main>section:nth-child(1)>div:nth-child(1){
+
+        body > main > section:nth-child(1) > div:nth-child(1) {
             background-image: url("assets/image/icon/github.png");
-        }body>main>section:nth-child(1)>div:nth-child(2){
+        }
+
+        body > main > section:nth-child(1) > div:nth-child(2) {
             background-image: url("assets/image/icon/linkedin.png");
-        }body>main>section:nth-child(1)>div:nth-child(3){
+        }
+
+        body > main > section:nth-child(1) > div:nth-child(3) {
             background-image: url("assets/image/icon/facebook.png");
-        }body>main>section:nth-child(1)>div:nth-child(4){
+        }
+
+        body > main > section:nth-child(1) > div:nth-child(4) {
             background-image: url("assets/image/icon/whatsapp.png");
+        }
+
+        /*------titles------*/
+        body > main > section > h2 {
+            position: absolute;
+            font-size: 40px;
+            left: 50px;
+            padding-top: 10px;
+        }
+
+        body > main > section:nth-child(4) > section:nth-child(3) {
+            position: relative;
+        }
+
+        body > main > section:nth-child(4)> section:nth-child(3)>article {
+            position: absolute;
+            width: 50vw;
+            right: 5vw;
+            top: 20vh;
+            font-size: 25px;
         }
     </style>
 
@@ -125,27 +170,35 @@
         <div></div>
     </section>
     <section><!--<h2>Home</h2>-->
-        <section>
-            <div>
-                <ul>
-                    <li>HELLO, I'm</li>
-                    <li>SADEEPA MEDHAN</li>
-                    <li>SUGEESHWARA</li>
-                </ul>
-            </div>
-            <aside>
-                <!--                <img src="assets/image/myProf.png" width="300" >-->
-            </aside>
-        </section>
-
+        <div>
+            <ul>
+                <li>HELLO, I'm</li>
+                <li>SADEEPA MEDHAN</li>
+                <li>SUGEESHWARA</li>
+            </ul>
+        </div>
+        <aside>
+            <img src="assets/image/myProf.png">
+        </aside>
     </section>
     <hr>
-    <section><h2>ABOUT ME</h2>
+    <section>
+        <h2>ABOUT ME</h2>
         <section>
             <aside><!--<img src="assets/image/myProf.png" width="200">--></aside>
         </section>
         <section>
-            <article></article>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid autem beatae, cumque
+                    cupiditate delectus dolor dolore dolorem explicabo laudantium officiis quas quia, quidem saepe
+                    sapiente sed suscipit, tempora tenetur!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid autem beatae, cumque
+                    cupiditate delectus dolor dolore dolorem explicabo laudantium officiis quas quia, quidem saepe
+                    sapiente sed suscipit, tempora tenetur!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid autem beatae, cumque
+                    cupiditate delectus dolor dolore dolorem explicabo laudantium officiis quas quia, quidem saepe
+                    sapiente sed suscipit, tempora tenetur!</p>
+            </article>
         </section>
     </section>
     <hr>
