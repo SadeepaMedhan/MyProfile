@@ -57,10 +57,13 @@
             display: inline-block;
         }
 
-        header > ul > li:hover {
+        header > ul > li>a>:hover {
             cursor: pointer;
             color: deepskyblue;
         }
+
+        
+
 
 
         /*-------my name---------*/
@@ -107,6 +110,11 @@
             border-radius: 10px;
         }
 
+        body > main > section:nth-child(1) > div:hover{
+            cursor: pointer;
+            background: deepskyblue;
+            background-size: contain;
+        }
         body > main > section:nth-child(1) > div {
             height: 100%;
             background-size: contain;
@@ -213,7 +221,7 @@
 
 
         /*-- Projects --*/
-        body > main > section:nth-child(10)>section>div{
+        body > main > section:nth-child(10)>section:nth-child(2)>div{
             width: 250px;
             height: 30px;
             border-radius: 10px;
@@ -228,14 +236,73 @@
             font-size: 25px;
         }
 
-        body > main > section:nth-child(10)>section {
+        body > main > section:nth-child(10)>section:nth-child(2) {
             position: relative;
             display: flex;
             justify-content: center;
             top: 160px;
         }
 
+        body > main > section:nth-child(10){
+            position: relative;
+            overflow: hidden;
+        }
 
+        body > main > section:nth-child(10)>section:nth-child(3){
+            width: 450px;
+            height: 250px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 250px;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid blue;
+        }
+
+        body > main > section:nth-child(10)>section:nth-child(3)>section{
+            border: 1px solid white;
+            width: 400%;
+            height: 100%;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        body > main > section:nth-child(10)>section:nth-child(3)>section>div{
+            width: 100%;
+            border: 1px solid lightblue;
+        }
+        body > main > section:nth-child(10)>section:nth-child(3)>section>div:nth-child(1){
+            background: url("assets/image/pr01.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        body > main > section:nth-child(10)>section:nth-child(3)>section>div:nth-child(2){
+            background: url("assets/image/pr02.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        body > main > section:nth-child(10)>section:nth-child(3)>section>div:nth-child(3){
+            background: url("assets/image/pr03.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        @keyframes slider {
+            0%,15%{
+                transform: translateX(0);
+            }
+            25%,40%{
+                transform: translateX(-25%);
+            }
+            50%,70%{
+                transform: translateX(-50%);
+            }
+            80%,100%{
+                transform: translateX(-75%);
+            }
+        }
 
 
         @media all and (max-width: 1440px) {
@@ -281,7 +348,7 @@
         <li>About</li>
         <li>Skills</li>
         <li>Education</li>
-        <li>Projects</li>
+        <li><a href="#project">Projects</a></li>
         <li>Contact</li>
     </ul>
 </header>
@@ -359,7 +426,7 @@
         </h2>
     </section>
     <hr>
-    <section>
+    <section id="project">
         <h2>LATEST PROJECTS <br>
             I'VE WORKED ON
         </h2>
@@ -374,17 +441,26 @@
                 <h3>Mobile</h3>
             </div>
         </section>
+        <section>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </section>
+    </section>
+    <hr>
+    <section>
+        <h2>Contact</h2>
+        <section>
+
+        </section>
+        <address></address>
     </section>
 </main>
-
 <footer>
-    <hr>
-    <h2>Contact</h2>
-    <section>
 
-    </section>
-    <address></address>
 </footer>
-
 </body>
 </html>
