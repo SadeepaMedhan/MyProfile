@@ -69,7 +69,7 @@
             margin-top: 18vh;
         }
 
-        body > main  section > div > ul {
+        body > main section > div > ul {
             list-style: none;
             font-family: monospace;
             font-size: 65px;
@@ -89,7 +89,7 @@
             width: 450px;
             right: 20vw;
             bottom: 0;
-            margin:auto;
+            margin: auto;
         }
 
         /*------------side button--------------*/
@@ -137,11 +137,12 @@
         }
 
 
-
-        body > main > section:nth-child(4) > section:nth-child(2){
+        /*-- About --*/
+        body > main > section:nth-child(4) > section:nth-child(2) {
             position: relative;
         }
-        body > main > section:nth-child(4) > section:nth-child(2)>img {
+
+        body > main > section:nth-child(4) > section:nth-child(2) > img {
             width: 350px;
             position: absolute;
             left: 12vw;
@@ -152,7 +153,7 @@
             position: relative;
         }
 
-        body > main > section:nth-child(4)> section:nth-child(3)>article {
+        body > main > section:nth-child(4) > section:nth-child(3) > article {
             position: absolute;
             width: 50vw;
             right: 5vw;
@@ -161,28 +162,107 @@
         }
 
 
+        /*-- Skills --*/
+        body > main > section:nth-child(6) > section:nth-child(2) > h3 {
+            position: absolute;
+            width: 100%;
+            height: max-content;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 80px;
+        }
 
-        @media all and (max-width: 1440px){
+        body > main > section:nth-child(6) > section:nth-child(2) {
+            position: relative;
+        }
+
+        body > main > section:nth-child(6) > section:nth-child(2) > section {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            top: 160px;
+        }
+
+        body > main > section:nth-child(6) > section > section > div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid white;
+        }
+
+        body > main > section:nth-child(6) > section:nth-child(3) > h3 {
+            position: absolute;
+            width: 100%;
+            height: max-content;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 250px;
+        }
+
+        body > main > section:nth-child(6) > section:nth-child(3) > section {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            top: 350px;
+        }
+
+
+        /*-- Education --*/
+        body > main > section:nth-child(8) {}
+
+
+        /*-- Projects --*/
+        body > main > section:nth-child(10)>section>div{
+            width: 250px;
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid white;
+        }
+        body > main > section:nth-child(10)>section>div>h3:hover{
+            cursor: pointer;
+            color: deepskyblue;
+        }
+        body > main > section:nth-child(10)>section>div>h3{
+            font-size: 25px;
+        }
+
+        body > main > section:nth-child(10)>section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 160px;
+        }
+
+
+
+
+        @media all and (max-width: 1440px) {
             body > main > section:nth-child(2) > aside > img {
                 width: 400px;
             }
         }
-        @media all and (max-width: 768px){
+
+        @media all and (max-width: 768px) {
             body > main > section:nth-child(2) > aside > img {
                 width: 350px;
             }
         }
-        @media all and (max-width: 425px){
+
+        @media all and (max-width: 425px) {
             body > main > section:nth-child(2) > aside > img {
                 width: 300px;
             }
         }
-        @media all and (max-width: 375px){
+
+        @media all and (max-width: 375px) {
             body > main > section:nth-child(2) > aside > img {
                 width: 250px;
             }
         }
-        @media all and (max-width: 320px){
+
+        @media all and (max-width: 320px) {
             body > main > section:nth-child(2) > aside > img {
                 width: 200px;
             }
@@ -251,9 +331,25 @@
             SKILLS</h2>
         <section>
             <h3>Tools</h3>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
         </section>
         <section>
             <h3>Languages</h3>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
         </section>
     </section>
     <hr>
@@ -267,7 +363,17 @@
         <h2>LATEST PROJECTS <br>
             I'VE WORKED ON
         </h2>
-        <h3>Standalone Web Mobile</h3>
+        <section>
+            <div>
+                <h3>Standalone</h3>
+            </div>
+            <div>
+                <h3>Web</h3>
+            </div>
+            <div>
+                <h3>Mobile</h3>
+            </div>
+        </section>
     </section>
 </main>
 
