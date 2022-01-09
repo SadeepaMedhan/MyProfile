@@ -1,4 +1,4 @@
-#**This is my Profile.**  
+# This is my Profile.
 
 <div id="top"></div>
 

@@ -1,12 +1,14 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>My Profile</title>
-    <!--    <link rel="icon" href="assets/icon/freestylerPro.png">-->
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta name="theme-color" content="Green">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
     <style>
         * {
             color: antiquewhite;
@@ -157,6 +159,36 @@
             top: 20vh;
             font-size: 25px;
         }
+
+
+
+        @media all and (max-width: 1440px){
+            body > main > section:nth-child(2) > aside > img {
+                width: 400px;
+            }
+        }
+        @media all and (max-width: 768px){
+            body > main > section:nth-child(2) > aside > img {
+                width: 350px;
+            }
+        }
+        @media all and (max-width: 425px){
+            body > main > section:nth-child(2) > aside > img {
+                width: 300px;
+            }
+        }
+        @media all and (max-width: 375px){
+            body > main > section:nth-child(2) > aside > img {
+                width: 250px;
+            }
+        }
+        @media all and (max-width: 320px){
+            body > main > section:nth-child(2) > aside > img {
+                width: 200px;
+            }
+        }
+
+
     </style>
 
 </head>
