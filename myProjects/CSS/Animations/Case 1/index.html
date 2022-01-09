@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1</title>
+    <style>
+        section{
+            margin-top: 80px;
+            position: relative;
+            width: 200px;
+            height: 80px;
+            background: blue;
+            border-radius: 15px;
+            animation-name: gogo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes gogo {
+            0%{
+                left: 0;
+                top: 0;
+                transform: rotate(0deg);
+            }
+
+            25%{
+                left: 600px;
+                top: 0;
+                transform: rotate(90deg);
+                background: yellow;
+            }
+
+            50%{
+                left: 600px;
+                top: 400px;
+                transform: rotate(180deg);
+                background: red;
+            }
+
+            75%{
+                left: 0px;
+                top: 400px;
+                transform: rotate(270deg);
+                background: purple;
+            }
+
+            100%{
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section></section>
+
+</body>
+</html>
