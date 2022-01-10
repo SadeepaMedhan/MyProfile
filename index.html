@@ -14,6 +14,10 @@
             color: antiquewhite;
         }
 
+        .highLight{
+            color: #55a4c1;
+        }
+
         header {
             position: relative;
             height: 60px;
@@ -22,13 +26,14 @@
 
         body > main > section {
             height: 100vh;
-            background-image: url("assets/image/blackBackground.jpg");
+            background: #121218;
         }
 
         p, pre, h2, h3, hr {
             margin: 0;
             font-family: monospace;
         }
+
 
         h2 {
             font-size: 30px;
@@ -56,26 +61,66 @@
             display: inline-block;
         }
 
-        header > ul > li > a > :hover {
+        header > ul > li:hover {
             cursor: pointer;
             color: deepskyblue;
         }
 
+        #homePage{
+            /*background: url("assets/image/blackBackground.jpg");*/
+            background: #121218;
+        }
+
 
         /*-------my name---------*/
-        body > main > section:nth-child(2) > div {
+        body > main > section:nth-child(2) > div > div{
             position: absolute;
-            margin-top: 18vh;
+            left: 59px;
+            top: 183px;
+            margin: auto;
         }
-
-        body > main section > div > ul {
-            list-style: none;
-            font-family: monospace;
+        body > main > section:nth-child(2) > div > div > p{
+           font-size: 65px;
+        }
+        body > main > section:nth-child(2) > div > ul{
+            position: absolute;
+            left: 163px;
+            top: 397px;
+            margin: auto;
             font-size: 65px;
+            font-family: monospace;
+            list-style: none;
+            height: 90px;
+            line-height: 90px;
+            overflow: hidden;
+        }
+        body > main > section:nth-child(2) > div > ul>li{
+            position: relative;
+            top: 0;
+            animation: sliding 4.5s steps(3) infinite;
+        }
+        @keyframes sliding {
+            100% {
+                top: -270px;
+            }
         }
 
-        body > main > section > div > ul > li:nth-child(1):first-letter {
-            color: deepskyblue;
+        body > main > section:nth-child(2) > div > ul> li::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #121218;
+            border-left: 5px solid #55a4c1;
+            animation: typing 1.5s steps(16) infinite;
+        }
+
+        @keyframes typing {
+            100% {
+                left: 100%;
+                margin: 0 -35px 0 35px;
+            }
         }
 
         /*-----my image-------*/
@@ -86,9 +131,10 @@
         body > main > section:nth-child(2) > aside > img {
             position: absolute;
             width: 450px;
-            right: 20vw;
+            right: 16vw;
             bottom: 0;
             margin: auto;
+            opacity: 80%;
         }
 
         /*------------side button--------------*/
@@ -152,6 +198,7 @@
             position: absolute;
             left: 12vw;
             top: 20vh;
+            opacity: 20%;
         }
 
         body > main > section:nth-child(4) > section:nth-child(3) {
@@ -163,7 +210,7 @@
             width: 50vw;
             right: 5vw;
             top: 20vh;
-            font-size: 25px;
+            font-size: 20px;
         }
 
 
@@ -426,7 +473,7 @@
         <li>About</li>
         <li>Skills</li>
         <li>Education</li>
-        <li><a href="#project">Projects</a></li>
+        <li>Projects</li>
         <li>Contact</li>
     </ul>
 </header>
@@ -438,13 +485,20 @@
         <div></div>
         <div></div>
     </section>
-    <section><!--<h2>Home</h2>-->
+    <section id="homePage" ><!--<h2>Home</h2>-->
         <div>
+            <div>
+                <p>I<span class="highLight">'</span>m a, <br>
+                SADEEPA MEDHAN<br>
+                SUGEESHWARA<br>
+                    <span class="highLight">And</span> </p>
+            </div>
             <ul>
-                <li>HELLO, I'm</li>
-                <li>SADEEPA MEDHAN</li>
-                <li>SUGEESHWARA</li>
+                <li>SOFTWARE ENGINEER</li>
+                <li>WEB DEVELOPER</li>
+                <li>SOUND MANAGER</li>
             </ul>
+
         </div>
         <aside>
             <img src="assets/image/myProf.png">
