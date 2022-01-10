@@ -14,7 +14,7 @@
             color: antiquewhite;
         }
 
-        .highLight{
+        .highLight {
             color: #55a4c1;
         }
 
@@ -36,7 +36,7 @@
 
 
         h2 {
-            font-size: 30px;
+            font-size: 34px;
         }
 
         body > header > h2 {
@@ -66,23 +66,25 @@
             color: deepskyblue;
         }
 
-        #homePage{
+        #homePage {
             /*background: url("assets/image/blackBackground.jpg");*/
             background: #121218;
         }
 
 
         /*-------my name---------*/
-        body > main > section:nth-child(2) > div > div{
+        body > main > section:nth-child(2) > div > div {
             position: absolute;
             left: 59px;
             top: 183px;
             margin: auto;
         }
-        body > main > section:nth-child(2) > div > div > p{
-           font-size: 65px;
+
+        body > main > section:nth-child(2) > div > div > p {
+            font-size: 65px;
         }
-        body > main > section:nth-child(2) > div > ul{
+
+        body > main > section:nth-child(2) > div > ul {
             position: absolute;
             left: 163px;
             top: 397px;
@@ -94,18 +96,20 @@
             line-height: 90px;
             overflow: hidden;
         }
-        body > main > section:nth-child(2) > div > ul>li{
+
+        body > main > section:nth-child(2) > div > ul > li {
             position: relative;
             top: 0;
-            animation: sliding 4.5s steps(3) infinite;
+            animation: sliding 6s steps(3) infinite;
         }
+
         @keyframes sliding {
             100% {
                 top: -270px;
             }
         }
 
-        body > main > section:nth-child(2) > div > ul> li::after{
+        body > main > section:nth-child(2) > div > ul > li::after {
             content: "";
             position: absolute;
             left: 0;
@@ -113,7 +117,7 @@
             width: 100%;
             background: #121218;
             border-left: 5px solid #55a4c1;
-            animation: typing 1.5s steps(16) infinite;
+            animation: typing 2s steps(16) infinite;
         }
 
         @keyframes typing {
@@ -183,8 +187,8 @@
         body > main > section > h2 {
             position: absolute;
             font-size: 40px;
-            left: 50px;
-            padding-top: 10px;
+            left: 60px;
+            padding-top: 15px;
         }
 
 
@@ -209,20 +213,37 @@
             position: absolute;
             width: 50vw;
             right: 5vw;
-            top: 20vh;
-            font-size: 20px;
+            top: 25vh;
+            font-size: 25px;
         }
 
+        body > main > section:nth-child(4) > section:nth-child(3) > article > ul {
+            list-style: none;
+        }
 
         /*-- Skills --*/
         body > main > section:nth-child(6) > section:nth-child(2) > h3 {
             position: absolute;
-            width: 100%;
+            width: fit-content;
             height: max-content;
+            left: 0;
+            right: 0;
+            margin: auto;
             text-align: center;
             font-weight: bold;
             font-size: 30px;
-            margin-top: 80px;
+            top: 80px;
+        }
+
+        body > main > section:nth-child(6) > section:nth-child(2) > div {
+            position: absolute;
+            height: 3px;
+            width: 200px;
+            background: linear-gradient(to left, #121218, white, #121218);
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 114px;
         }
 
         body > main > section:nth-child(6) > section:nth-child(2) {
@@ -236,6 +257,11 @@
             top: 160px;
         }
 
+        body > main > section:nth-child(6) > section > section > div:hover {
+            cursor: pointer;
+            border: 2px solid #55a4c1;
+        }
+
         body > main > section:nth-child(6) > section > section > div {
             width: 100px;
             height: 100px;
@@ -243,14 +269,32 @@
             border-radius: 10px;
         }
 
+        body > main > section:nth-child(6) > section:nth-child(3) {
+            position: relative;
+        }
+
         body > main > section:nth-child(6) > section:nth-child(3) > h3 {
             position: absolute;
-            width: 100%;
+            width: fit-content;
             height: max-content;
+            left: 0;
+            right: 0;
+            margin: auto;
             text-align: center;
             font-weight: bold;
             font-size: 30px;
-            margin-top: 250px;
+            top: 250px;
+        }
+
+        body > main > section:nth-child(6) > section:nth-child(3) > div {
+            position: absolute;
+            height: 3px;
+            width: 200px;
+            background: linear-gradient(to left, #121218, white, #121218);
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 287px;
         }
 
         body > main > section:nth-child(6) > section:nth-child(3) > section {
@@ -258,6 +302,12 @@
             display: flex;
             justify-content: space-evenly;
             top: 350px;
+        }
+
+        body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(1) {
+            background: url("assets/image/icon/java.png");
+            background-size: cover;
+            background-position: center;
         }
 
         body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(1) {
@@ -268,9 +318,100 @@
 
 
         /*-- Education --*/
-        body > main > section:nth-child(8) {
+
+        body > main > section:nth-child(8) > section:nth-child(2) {
+            position: relative;
+            display: flex;
+            height: 600px;
+            width: 68vw;
+            top: 144px;
+            bottom: 0;
+            right: 0;
+            left: 60px;
+            margin: auto;
+
         }
 
+        body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section > section {
+            position: relative;
+            height: 202px;
+            width: 100%;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section > section > div {
+            position: absolute;
+            left: 0;
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            margin: auto;
+            border: 1px solid white;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section > section > p {
+            position: absolute;
+            font-size: 25px;
+            width: fit-content;
+            top: 12px;
+            left: 92px;
+            margin: auto;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section > section > section {
+            position: absolute;
+            height: 139px;
+            width: 6px;
+            left: 28px;
+            top: 62px;
+            background: white;
+            margin: auto;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(1) > div {
+            background: url("assets/image/icon/icons8-school-building-64.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > div {
+            background: url("assets/image/icon/icons8-school-64.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div {
+            background: url("assets/image/icon/icons8-university-50.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > section:nth-child(1) > div {
+            background: url("assets/image/icon/icon2.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > section:nth-child(2) > div {
+            background: url("assets/image/icon/icon-laptop.png");
+            background-size: cover;
+            background-position: center;
+        }
 
         /*-- Projects --*/
         body > main > section:nth-child(10) > section:nth-child(2) > div {
@@ -392,7 +533,8 @@
             flex-direction: column;
             justify-content: space-evenly;
         }
-        body > main > section:nth-child(12) > section > section:nth-child(1)>div>input{
+
+        body > main > section:nth-child(12) > section > section:nth-child(1) > div > input {
             width: 90%;
             height: 40px;
             border-radius: 10px;
@@ -401,14 +543,17 @@
             font-family: monospace;
             font-size: 20px;
         }
-        body > main > section:nth-child(12) > section > section:nth-child(1)>div:nth-child(3)>input{
+
+        body > main > section:nth-child(12) > section > section:nth-child(1) > div:nth-child(3) > input {
             height: 80px;
         }
-        body > main > section:nth-child(12) > section > section:nth-child(1)>div>button:hover {
+
+        body > main > section:nth-child(12) > section > section:nth-child(1) > div > button:hover {
             cursor: pointer;
             color: #55a4c1;
         }
-        body > main > section:nth-child(12) > section > section:nth-child(1)>div>button{
+
+        body > main > section:nth-child(12) > section > section:nth-child(1) > div > button {
             width: 90%;
             height: 40px;
             border-radius: 15px;
@@ -423,11 +568,11 @@
             position: absolute;
             right: 0;
         }
-        body > main > section:nth-child(12) > section > section:nth-child(2)>ul{
+
+        body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
             font-size: 24px;
             list-style: none;
         }
-
 
 
         @media all and (max-width: 1440px) {
@@ -485,18 +630,18 @@
         <div></div>
         <div></div>
     </section>
-    <section id="homePage" ><!--<h2>Home</h2>-->
+    <section id="homePage"><!--<h2>Home</h2>-->
         <div>
             <div>
-                <p>I<span class="highLight">'</span>m a, <br>
-                SADEEPA MEDHAN<br>
-                SUGEESHWARA<br>
-                    <span class="highLight">And</span> </p>
+                <p><span class="highLight">HELLO, I'M</span><br>
+                    SADEEPA MEDHAN<br>
+                    SUGEESHWARA<br>
+                    <span class="highLight">AND</span></p>
             </div>
             <ul>
-                <li>SOFTWARE ENGINEER</li>
-                <li>WEB DEVELOPER</li>
-                <li>SOUND MANAGER</li>
+                <li>Software Engineer</li>
+                <li>Web Developer</li>
+                <li>Sound Manager</li>
             </ul>
 
         </div>
@@ -506,30 +651,30 @@
     </section>
     <hr>
     <section>
-        <h2>ABOUT ME</h2>
+        <h2>ABOUT <span class="highLight">ME</span></h2>
         <section>
             <img src="assets/image/myImage02.jpg" alt="">
         </section>
         <section>
             <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid autem beatae, cumque
-                    cupiditate delectus dolor dolore dolorem explicabo laudantium officiis quas quia, quidem saepe
-                    sapiente sed suscipit, tempora tenetur!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid autem beatae, cumque
-                    cupiditate delectus dolor dolore dolorem explicabo laudantium officiis quas quia, quidem saepe
-                    sapiente sed suscipit, tempora tenetur!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid autem beatae, cumque
-                    cupiditate delectus dolor dolore dolorem explicabo laudantium officiis quas quia, quidem saepe
-                    sapiente sed suscipit, tempora tenetur!</p>
+                <p>Hi, I'm currently studying at Institute of Software Engineering in Galle.</p>
+                <ul>
+                    <li>Name : S.A. Sadeepa Medhan Sugeeshwara</li>
+                    <li>City : Matara</li>
+                    <li>Address : "Yasiru", Eduwa, Palatuwa</li>
+                    <li>Phone : 0711757823</li>
+                    <li>E mail : sadeepamedhan823@gmail.com</li>
+                </ul>
             </article>
         </section>
     </section>
     <hr>
     <section>
-        <h2>HERE'RE MY <br>
+        <h2><span class="highLight">HERE'RE MY</span> <br>
             SKILLS</h2>
         <section>
             <h3>Tools</h3>
+            <div></div>
             <section>
                 <div></div>
                 <div></div>
@@ -538,9 +683,18 @@
                 <div></div>
                 <div></div>
             </section>
+            <section>
+                <h4>PhotoShop</h4>
+                <h4>Xd</h4>
+                <h4>Figma</h4>
+                <h4>Arduino</h4>
+                <h4>IntelliJ</h4>
+                <h4>VS</h4>
+            </section>
         </section>
         <section>
             <h3>Languages</h3>
+            <div></div>
             <section>
                 <div></div>
                 <div></div>
@@ -548,18 +702,55 @@
                 <div></div>
                 <div></div>
                 <div></div>
+            </section>
+            <section>
+                <h4>Java</h4>
+                <h4>MySQL</h4>
+                <h4>C#</h4>
+                <h4>HTML5</h4>
+                <h4>JavaScript</h4>
+                <h4>Python</h4>
             </section>
         </section>
     </section>
     <hr>
     <section>
-        <h2>HERE'S MY <br>
+        <h2><span class="highLight">HERE'S MY </span><br>
             EDUCATION
         </h2>
+        <section>
+            <section>
+                <section>
+                    <div></div>
+                    <section></section>
+                    <p>MR/Godagama Anagarika <br> Dharmapala Vidyalaya </p>
+                </section>
+                <section>
+                    <div></div>
+                    <section></section>
+                    <p>MR/Matara Central <br> College </p>
+                </section>
+                <section>
+                    <div></div>
+                    <p>Esoft Metro Campus <br> Matara </p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <div></div>
+                    <section></section>
+                    <p>Institute of Java Software <br> Engineering</p>
+                </section>
+                <section>
+                    <div></div>
+                    <p>Industry</p>
+                </section>
+            </section>
+        </section>
     </section>
     <hr>
     <section id="project">
-        <h2>LATEST PROJECTS <br>
+        <h2><span class="highLight">LATEST PROJECTS</span> <br>
             I'VE WORKED ON
         </h2>
         <section>
@@ -584,7 +775,10 @@
     </section>
     <hr>
     <section>
-        <h2>CONTACT</h2>
+        <h2><span class="highLight">CONTACT</span> <br>
+            GET IN TOUCH WITH <br>
+            ME, I'LL REPLAY AS <br>
+            SOON AS <span style="color: #bf9412">POSSIBLE!</span></h2>
         <section>
             <section>
                 <div>
@@ -604,11 +798,11 @@
             </section>
             <section>
                 <h2>MORE INFORMATION</h2>
-                    <ul>
-                        <li>Address</li>
-                        <li>E-mail</li>
-                        <li>Contact</li>
-                    </ul>
+                <ul>
+                    <li>Address</li>
+                    <li>E-mail</li>
+                    <li>Contact</li>
+                </ul>
             </section>
         </section>
 
