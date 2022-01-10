@@ -7,6 +7,10 @@
 [![FaceBook][faceBook-shield]][faceBook-url]
 [![WhatsApp][whatsApp-shield]][whatsApp-url]
 
+[SiteMap](https://www.gloomaps.com/ayDv2tMQV9)
+[WireFrame](https://wireframe.cc/RIGr3O)
+[MockUp](https://www.figma.com/proto/SHZXJvxqMQUjuTrsDRancK/MyProfile?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2)
+
 
 [myProfile-shield]: https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white
 [myProfile-url]: https://sadeepamedhan.github.io/MyProfile/
