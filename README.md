@@ -7,8 +7,11 @@
 [![FaceBook][faceBook-shield]][faceBook-url]
 [![WhatsApp][whatsApp-shield]][whatsApp-url]
 
+
 [SiteMap](https://www.gloomaps.com/ayDv2tMQV9)
+
 [WireFrame](https://wireframe.cc/RIGr3O)
+
 [MockUp](https://www.figma.com/proto/SHZXJvxqMQUjuTrsDRancK/MyProfile?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2)
 
 
@@ -24,5 +27,3 @@
 [whatsApp-shield]: https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white
 [whatsApp-url]: https://wa.me/+94711757823
 
-
-[product-screenshot]: images/screenshot.png
