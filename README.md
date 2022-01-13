@@ -8,11 +8,40 @@
 [![WhatsApp][whatsApp-shield]][whatsApp-url]
 
 
-[SiteMap](https://www.gloomaps.com/ayDv2tMQV9)
 
-[WireFrame](https://wireframe.cc/RIGr3O)
 
-[MockUp](https://www.figma.com/proto/SHZXJvxqMQUjuTrsDRancK/MyProfile?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2)
+ * [SiteMap URL](https://www.gloomaps.com/ayDv2tMQV9)
+
+ * [WireFrame URL](https://wireframe.cc/RIGr3O)
+
+ * [MockUp URL](https://www.figma.com/proto/SHZXJvxqMQUjuTrsDRancK/MyProfile?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2)
+
+ * [Project Link](https://sadeepamedhan.github.io/MyProfile/)
+
+ * [000WebHost URL](https://sadeepamedhan823.000webhostapp.com/)
+
+
+## ScreenShots
+
+### Home Page
+![App Screenshot](assets/image/home.png)
+
+### About Page
+![App Screenshot](assets/image/about.png)
+
+### Skills Page
+![App Screenshot](assets/image/skills.png)
+
+### Education Page
+![App Screenshot](assets/image/education.png)
+
+### Projects Page
+![App Screenshot](assets/image/projects.png)
+
+### Contact Page
+![App Screenshot](assets/image/contact.png)
+
+
 
 
 [myProfile-shield]: https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white
