@@ -85,6 +85,21 @@
             background-position: center;
         }
 
+        .cv-button{
+            text-decoration: none;
+            position: absolute;
+            bottom: 175px;
+            left: 57px;
+            margin: auto;
+            font-size: 20px;
+            width: 121px;
+            height: 25px;
+            border: 1px solid white;
+            border-radius: 8px;
+        }
+        .cv-button:hover{
+            color: #55a4c1;
+        }
 
         /*-------my name---------*/
         body > main > section:nth-child(2) > div > div {
@@ -1241,6 +1256,14 @@
                     font-size: 30px;
                 }
 
+                .cv-button{
+                    bottom: 332px;
+                    left: 189px;
+                    font-size: 16px;
+                    width: 103px;
+                    height: 20px;
+                }
+
             /*image*/
             body > main > section:nth-child(2) > aside > img {
                 width: 212px;
@@ -1326,7 +1349,7 @@
                 height: 100px;
             }
             .gallery {
-                width: 375px;
+                width: 239px;
                 top: 124px;
             }
             .gallery_img-1 {
@@ -1334,26 +1357,29 @@
                 left: 29px;
             }
             .gallery_img-2 {
-                top: 0;
-                right: 12px;
+                top: 130px;
+                left: 29px;
             }
             .gallery_img-3 {
-                left: 7%;
-                top: 133px;
+               display: none;
             }
 
             .gallery_img-4 {
-                left: 7%;
-                top: 262px;
+                display: none;
+
             }
 
             .gallery_img-5 {
-                left: 53%;
-                top: 130px;
+                display: none;
+
             }
 
 
             /*contact*/
+
+            .contact-tittle{
+                font-size: 22px!important;
+            }
             body > main > section:nth-child(12) > section {
                 height: 306px;
             }
@@ -1426,6 +1452,8 @@
                 <li>Web Developer</li>
                 <li>Sound Manager</li>
             </ul>
+
+            <a href="" class="cv-button" >Download CV</a>
 
         </div>
         <aside>
@@ -1565,7 +1593,7 @@
     </section>
     <hr>
     <section id="contact">
-        <h2><span class="highLight">CONTACT</span> <br>
+        <h2 class="contact-tittle"><span class="highLight">CONTACT</span> <br>
             GET IN TOUCH WITH <br>
             ME, I'LL REPLAY AS <br>
             SOON AS <span style="color: #bf9412">POSSIBLE!</span></h2>
