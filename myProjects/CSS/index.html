@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Projects</title>
+    <meta content="Blog, Software, Web developing" name="keywords">
+    <meta content="This is my personal blog..." name="description">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/bc871e0fef.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Titillium+Web:wght@200&display=swap"
+          rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main > section {
+            position: relative;
+            width: calc(100% / 3);
+            height: 100vh;
+        }
+
+        main > section:nth-child(1) {
+            background-color: rgba(0, 0, 0, .1);
+        }
+
+        main > section:nth-child(2) {
+            background-color: rgba(0, 0, 0, .2);
+        }
+
+        main > section:nth-child(3) {
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        main > section:nth-child(1) > p:nth-child(1),
+        main > section:nth-child(2) > p:nth-child(1),
+        main > section:nth-child(3) > p:nth-child(1) {
+            position: absolute;
+            margin: auto;
+            width: fit-content;
+            top: 20px;
+            left: 0;
+            right: 0;
+            font-family: 'Titillium Web', sans-serif;
+            color: rgba(0, 0, 0, 1);
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        main > section:nth-child(1) > section:nth-child(2),
+        main > section:nth-child(2) > section:nth-child(2),
+        main > section:nth-child(3) > section:nth-child(2) {
+            width: 60%;
+            height: 80%;
+            position: absolute;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 10%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+
+        .anTag{  border-radius: 5px;
+            position: relative;
+            height: calc(80% / 4);
+            width: 100%;
+            background-color: rgba(0, 0, 0, .2);
+            box-shadow: black;
+            cursor: pointer;
+        }
+
+        main > section:nth-child(2) > section:nth-child(2) > a:nth-child(1),
+        main > section:nth-child(2) > section:nth-child(2) > a:nth-child(2){
+            background-color: rgba(0, 0, 0, 0) !important;
+            cursor: default!important;
+
+        }
+
+
+        .anTag >img{
+            opacity: .7;
+            border-radius: 5px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 5px;
+            bottom: 0;
+        }
+
+        .anTag > p{
+            position: absolute;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            top: 0;
+            bottom: 0;
+            right: 25%;
+            font-family: 'Titillium Web', sans-serif;
+            color: rgba(0, 0, 0, 1);
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .w_o_Image{
+            position: absolute;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            top: 0!important;
+            bottom: 0!important;
+            right:0!important;
+            left: 0!important;
+            font-family: 'Titillium Web', sans-serif;
+            color: rgba(0, 0, 0, 1);
+            font-weight: bold;
+            font-size: 1em;
+        }
+    </style>
+
+
+</head>
+<body>
+<main>
+    <section>
+        <p>Layouts</p>
+        <section>
+            <a class="anTag" href="Layouts/Case%201/index.html">
+                <img src="assets/images/c1.png" alt="Girl in a jacket" width="40%" height="90%">
+                <p>Case 01</p>
+            </a>
+
+            <a class="anTag" href="Layouts/Case%202/index.html">
+                <img src="assets/images/c2.png" alt="Girl in a jacket" width="40%" height="90%">
+                <p>Case 02</p>
+            </a>
+
+            <a class="anTag" href="Layouts/Case%203/index.html">
+                <img src="assets/images/c3.png" alt="Girl in a jacket" width="40%" height="90%">
+                <p>Case 03</p>
+            </a>
+
+            <a class="anTag" href="Layouts/Case%204/index.html">
+                <img src="assets/images/c4.png" alt="Girl in a jacket" width="40%" height="90%">
+                <p>Case 04</p>
+            </a>
+        </section>
+    </section>
+    <!--  transitions assignments-->
+    <section>
+        <p>Transitions</p>
+        <section>
+            <a class="anTag" href=""></a>
+            <a class="anTag" href=""></a>
+            <a class="anTag" href="Transitions/Case%201/index.html">
+                <img src="assets/images/" alt="Navigation transition" width="40%" height="90%">
+                <p class="w_o_Image">Case 01</p>
+            </a>
+            <a class="anTag" href="Transitions/Case%202/index.html">
+                <img src="assets/images/" alt="Circle border transition" width="40%" height="90%">
+                <p class="w_o_Image">Case 02</p>
+            </a>
+        </section>
+    </section>
+    <!--  animations assignments-->
+    <section>
+        <p>Animations</p>
+        <section>
+            <a class="anTag" href="Animations/Case%201/index.html">
+                <img src="" alt="Basic Rotation with animation" width="40%" height="90%">
+                <p class="w_o_Image">Case 01</p>
+            </a>
+
+            <a class="anTag" href="Animations/Case%202/index.html">
+                <img src="" alt="Water drop animation" width="40%" height="90%">
+                <p class="w_o_Image">Case 02</p>
+            </a>
+
+            <a class="anTag" href="Animations/Case%203/index.html">
+                <img src="" alt="Slider animation" width="40%" height="90%">
+                <p class="w_o_Image">Case 03</p>
+            </a>
+
+            <a class="anTag" href="Animations/Case%204/index.html">
+                <img src="" alt="Car animation" width="40%" height="90%">
+                <p class="w_o_Image">Case 04</p>
+            </a>
+        </section>
+    </section>
+</main>
+</body>
+</html>
