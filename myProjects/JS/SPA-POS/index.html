@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/fonts/css/all.css">
+    <style>
+        .label-one {
+            background: #53A57F;
+            border-radius: 10px;
+            width: 275px;
+            height: 190px;
+            margin: auto;
+        }
+
+        .label-one > i {
+            color: white;
+            font-size: 5em;
+            text-align: center;
+            display: block;
+            padding-top: 30px;
+        }
+
+        .label-one > p {
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .nav-links {
+            font-size: 1.2em;
+        }
+
+        .nav-links:hover {
+            color: #0a53be;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="shadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="assets/images/shop-Icon.jpg" alt="" class="d-inline-block align-text-top" width="45px">
+            <h2 class="mx-2">DAILY FOODS</h2>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-1">
+                        <!--                        <a href="index.html">Home</a>-->
+                        <label id="homePage" class="nav-links">Home</label>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <!--                        <a href="placeOrderIndex.html">Orders</a>-->
+                        <label id="orderPage" class="nav-links">Orders</label>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <!--                        <a href="storeManageIndex.html">Items</a>-->
+                        <label id="itemPage" class="nav-links">Items</label>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <!--                        <a href="customerManageIndex.html">Customers</a>-->
+                        <label id="customerPage" class="nav-links">Customers</label>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-success mx-2">Sign Up</button>
+                    <button class="btn btn-outline-danger mx-2">Log Out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+</section>
+<section id="homeSection" class="container-fluid mt-3">
+    <div class="row">
+        <section class="col-3 label-one shadow">
+            <i class="fas fa-users"></i>
+            <p>Customers</p>
+        </section>
+        <section class="col-3 label-one shadow">
+            <i class="fas fa-cubes"></i>
+            <p>Items</p>
+        </section>
+        <section class="col-3 label-one shadow">
+            <i class="fab fa-shopify"></i>
+            <p>Orders</p>
+        </section>
+        <section class="col-3 label-one shadow">
+            <i class="fas fa-chart-line"></i>
+            <p>Income</p>
+        </section>
+    </div>
+    <div class="row mt-3">
+        <section class="col-8">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" style="height: 370px">
+                    <div class="carousel-item active">
+                        <img src="assets/images/supermarket.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/supermarket1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/supermarket3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, amet animi consectetur, corporis culpa
+                dignissimos dolorum eaque fugiat harum illo ipsum nam numquam odio qui quis sed sequi sunt
+                voluptatem.</p>
+        </section>
+    </div>
+</section>
+
+<section id="orderSection" class="container-fluid">
+    <section class="row pe-4 ps-4">
+        <div class="col shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
+            <form class="row g-3">
+                <legend class="bg-success p-2 text-white bg-opacity-75">Customer Details</legend>
+                <div class="col-md-6">
+                    <label for="inputOrderID" class="form-label">Order ID :</label>
+                    <input type="email" class="form-control" id="inputOrderID" placeholder="D001">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputDate" class="form-label">Date :</label>
+                    <input type="password" class="form-control" id="inputDate" placeholder="21/01/2022">
+                </div>
+                <div class="col-6">
+                    <label for="inputCustomer" class="form-label">Customer :</label>
+                    <select id="inputCustomer" class="form-select">
+                        <option selected>C001</option>
+                        <option>C002</option>
+                        <option>C003</option>
+                        <option>C004</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label for="inputCustomerID" class="form-label">Customer ID :</label>
+                    <input type="text" class="form-control" id="inputCustomerID" placeholder="C001">
+                </div>
+                <div class="col-6">
+                    <label for="inputName" class="form-label">Name :</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Nimal">
+                </div>
+                <div class="col-6">
+                    <label for="inputSalary" class="form-label">Salary :</label>
+                    <input type="text" class="form-control" id="inputSalary" placeholder="100000.00">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address :</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Matara">
+                </div>
+            </form>
+        </div>
+        <div class="col-5 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
+            <form class="row g-3">
+                <legend class="bg-success p-2 text-white bg-opacity-75">Select Items</legend>
+                <div class="col-md-6">
+                    <label for="inputItem" class="form-label">Item :</label>
+                    <select id="inputItem" class="form-select">
+                        <option selected>P001</option>
+                        <option>P002</option>
+                        <option>P003</option>
+                        <option>P004</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputItemCode" class="form-label">Item Code :</label>
+                    <input type="password" class="form-control" id="inputItemCode" placeholder="P001">
+                </div>
+                <div class="col-5">
+                    <label for="inputItemName" class="form-label">Item Name :</label>
+                    <input type="email" class="form-control" id="inputItemName" placeholder="Salt 1kg">
+                </div>
+                <div class="col-4">
+                    <label for="inputPrice" class="form-label">Price :</label>
+                    <input type="text" class="form-control" id="inputPrice" placeholder="50.00">
+                </div>
+                <div class="col-3">
+                    <label for="inputQtyOnHand" class="form-label">QtyOnH :</label>
+                    <input type="text" class="form-control" id="inputQtyOnHand" placeholder="200">
+                </div>
+                <div class="col-12">
+                    <label for="inputOrderQty" class="form-label">Order Qty :</label>
+                    <input type="text" class="form-control" id="inputOrderQty" placeholder="2">
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-sm btn-secondary me-2" type="button">Add Item</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-3 shadow-lg p-3 mb-4  bg-body border rounded  border-2 mt-3  col-12 col-sm-12 col-md-8 col-lg-5 col-xl-3">
+            <form class="row g-3">
+                <div>
+                    <h3 class="text-primary">Total : 100 Rs/=</h3>
+                    <h3 class="text-danger">SubTotal : 95 Rs/=</h3>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCash" class="form-label">Cash</label>
+                    <input type="email" class="form-control" id="inputCash" placeholder="500">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputDiscount" class="form-label">Discount</label>
+                    <input type="password" class="form-control" id="inputDiscount" placeholder="10">
+                </div>
+                <div class="col-12">
+                    <label for="inputBalance" class="form-label">Balance</label>
+                    <input type="text" class="form-control" id="inputBalance" placeholder="405">
+                </div>
+                <div class="col-12 mx-auto" style="width: 100px">
+                    <button id="purchaseBtn" type="submit" class="btn btn-sm btn-success">Purchase</button>
+                </div>
+            </form>
+        </div>
+        <div class=" shadow-lg">
+            <table class="table table-bordered table-hover m-0">
+                <thead class="table-secondary">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-hover fw-light">
+                    <th>P001</th>
+                    <th>Salt 1kg</th>
+                    <th>50</th>
+                    <th>2</th>
+                    <th>100</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+
+<section id="itemSection" class="container m-md-4">
+    <section class="row">
+        <div class="col-6 bg-success p-2 text-dark bg-opacity-25 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
+            <form>
+                <fieldset>
+                    <legend class="bg-success p-2 text-white bg-opacity-75">Search Items</legend>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Search here..">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option>Name</option>
+                            <option>ID</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-6 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3 my-2">
+            <button class="btn btn-warning">New Item</button>
+            <button class="btn btn-secondary">View All</button>
+        </div>
+    </section>
+
+    <section class="row p-2">
+        <button class="btn btn-danger col-1 mx-1">Delete</button>
+        <button class="btn btn-success col-1 mx-1">Details</button>
+        <button class="btn btn-primary col-1 mx-1">Clear</button>
+    </section>
+
+    <section class="row p-2">
+        <table class="table table-striped table-info">
+            <thead>
+            <tr>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Salt</th>
+                <td>50</td>
+                <td>50</td>
+                <td>25000</td>
+            </tr>
+            <tr>
+                <th scope="row">Salt</th>
+                <td>50</td>
+                <td>50</td>
+                <td>25000</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+</section>
+
+<section id="customerSection" class="container m-md-4">
+    <section class="row">
+        <div class="col-6 bg-success p-2 text-dark bg-opacity-25 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
+            <form>
+                <fieldset>
+                    <legend class="bg-success p-2 text-white bg-opacity-75">Customer Search</legend>
+                    <div class="mb-3">
+                        <label for="disabledTextInput"></label><input type="text" id="disabledTextInput"
+                                                                      class="form-control" placeholder="Search here..">
+                    </div>
+                    <div class="mb-3">
+                        <select id="disabledSelect" class="form-select">
+                            <option>Name</option>
+                            <option>ID</option>
+                            <option>NIC</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-6 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3 my-2">
+            <button class="btn btn-warning">New Customer</button>
+            <button class="btn btn-secondary">View All</button>
+        </div>
+    </section>
+
+    <section class="row p-2">
+        <button class="btn btn-danger col-1 mx-1 col-sm-6 col-md-3 col-lg-2 col-xl-1">Delete</button>
+        <button class="btn btn-success col-1 mx-1 col-sm-4 col-md-3 col-lg-2 col-xl-1">Details</button>
+        <button class="btn btn-primary col-1 mx-1 col-sm-4 col-md-3 col-lg-2 col-xl-1">Clear</button>
+    </section>
+
+    <section class="row p-2">
+        <table class="table table-striped table-info">
+            <thead>
+            <tr>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Tip</th>
+                <th scope="col">Salary</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Kamal</th>
+                <td>50</td>
+                <td>50</td>
+                <td>25000</td>
+            </tr>
+            <tr>
+                <th scope="row">Kamal</th>
+                <td>50</td>
+                <td>50</td>
+                <td>25000</td>
+            </tr>
+            <tr>
+                <th scope="row">Kamal</th>
+                <td>50</td>
+                <td>50</td>
+                <td>25000</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+</section>
+
+
+<script>
+    document.getElementById("orderSection").style.display = "none";
+    document.getElementById("itemSection").style.display = "none";
+    document.getElementById("customerSection").style.display = "none";
+    document.getElementById("homePage").style.fontWeight = "bold";
+
+    document.getElementById("homePage").addEventListener("click", function () {
+        document.getElementById("orderSection").style.display = "none";
+        document.getElementById("itemSection").style.display = "none";
+        document.getElementById("customerSection").style.display = "none";
+        document.getElementById("homeSection").style.display = "block";
+        document.getElementById("homePage").style.fontWeight = "bold";
+        document.getElementById("orderPage").style.fontWeight = "normal";
+        document.getElementById("itemPage").style.fontWeight = "normal";
+        document.getElementById("customerPage").style.fontWeight = "normal";
+    });
+    document.getElementById("orderPage").addEventListener("click", function () {
+        document.getElementById("homeSection").style.display = "none";
+        document.getElementById("itemSection").style.display = "none";
+        document.getElementById("customerSection").style.display = "none";
+        document.getElementById("orderSection").style.display = "block";
+        document.getElementById("orderPage").style.fontWeight = "bold";
+        document.getElementById("homePage").style.fontWeight = "normal";
+        document.getElementById("itemPage").style.fontWeight = "normal";
+        document.getElementById("customerPage").style.fontWeight = "normal";
+    });
+    document.getElementById("itemPage").addEventListener("click", function () {
+        document.getElementById("orderSection").style.display = "none";
+        document.getElementById("homeSection").style.display = "none";
+        document.getElementById("customerSection").style.display = "none";
+        document.getElementById("itemSection").style.display = "block";
+        document.getElementById("itemPage").style.fontWeight = "bold";
+        document.getElementById("orderPage").style.fontWeight = "normal";
+        document.getElementById("homePage").style.fontWeight = "normal";
+        document.getElementById("customerPage").style.fontWeight = "normal";
+    });
+    document.getElementById("customerPage").addEventListener("click", function () {
+        document.getElementById("homeSection").style.display = "none";
+        document.getElementById("itemSection").style.display = "none";
+        document.getElementById("orderSection").style.display = "none";
+        document.getElementById("customerSection").style.display = "block";
+        document.getElementById("customerPage").style.fontWeight = "bold";
+        document.getElementById("orderPage").style.fontWeight = "normal";
+        document.getElementById("itemPage").style.fontWeight = "normal";
+        document.getElementById("homePage").style.fontWeight = "normal";
+    });
+</script>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

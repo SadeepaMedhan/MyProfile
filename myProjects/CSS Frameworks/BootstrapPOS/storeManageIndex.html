@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Store Page</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<section class="shadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="assets/images/shop-Icon.jpg" alt="" class="d-inline-block align-text-top" width="45px">
+            <h2 class="mx-2">DAILY FOODS</h2>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-1">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="placeOrderIndex.html">Orders</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="storeManageIndex.html">Items</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a href="customerManageIndex.html">Customers</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-success mx-2">Sign Up</button>
+                    <button class="btn btn-outline-danger mx-2" >Log Out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+<p class="h1">Mange Store</p>
+
+
+<section class="container m-md-4">
+    <section class="row">
+        <div class="col-6 bg-success p-2 text-dark bg-opacity-25 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
+            <form>
+                <fieldset>
+                    <legend class="bg-success p-2 text-white bg-opacity-75">Search Items</legend>
+                    <div class="mb-3">
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Search here..">
+                    </div>
+                    <div class="mb-3">
+                        <select id="disabledSelect" class="form-select">
+                            <option>Name</option>
+                            <option>ID</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-6 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3 my-2">
+            <button class="btn btn-warning">New Item</button>
+            <button class="btn btn-secondary">View All</button>
+        </div>
+    </section>
+
+    <section class="row p-2">
+        <button class="btn btn-danger col-1 mx-1">Delete</button>
+        <button  class="btn btn-success col-1 mx-1">Details</button>
+        <button  class="btn btn-primary col-1 mx-1">Clear</button>
+    </section>
+
+    <section class="row p-2">
+        <table class="table table-striped table-info">
+            <thead>
+            <tr>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Salt</th>
+                <td>50</td>
+                <td>50</td>
+                <td>25000</td>
+            </tr>
+            <tr>
+                <th scope="row">Salt</th>
+                <td>50</td>
+                <td>50</td>
+                <td>25000</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+</section>
+
+</body>
+</html>
