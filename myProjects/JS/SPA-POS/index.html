@@ -13,6 +13,7 @@
             width: 275px;
             height: 190px;
             margin: auto;
+
         }
 
         .label-one > i {
@@ -151,36 +152,33 @@
                 <legend class="bg-success p-2 text-white bg-opacity-75">Customer Details</legend>
                 <div class="col-md-6">
                     <label for="inputOrderID" class="form-label">Order ID :</label>
-                    <input type="email" class="form-control" id="inputOrderID" placeholder="D001">
+                    <input type="text" class="form-control" id="inputOrderID" placeholder="D001">
                 </div>
                 <div class="col-md-6">
                     <label for="inputDate" class="form-label">Date :</label>
-                    <input type="password" class="form-control" id="inputDate" placeholder="21/01/2022">
+                    <input type="text" class="form-control" id="inputDate" placeholder="21/01/2022">
                 </div>
                 <div class="col-6">
                     <label for="inputCustomer" class="form-label">Customer :</label>
-                    <select id="inputCustomer" class="form-select">
-                        <option selected>C001</option>
-                        <option>C002</option>
-                        <option>C003</option>
-                        <option>C004</option>
+                    <select id="inputCustomer" class="form-select" onchange="loadCusIds()">
+
                     </select>
                 </div>
                 <div class="col-6">
-                    <label for="inputCustomerID" class="form-label">Customer ID :</label>
-                    <input type="text" class="form-control" id="inputCustomerID" placeholder="C001">
+                    <label for="txtOrderCusID" class="form-label">Customer ID :</label>
+                    <input id="txtOrderCusID" type="text" class="form-control"  placeholder="C001">
                 </div>
                 <div class="col-6">
-                    <label for="inputName" class="form-label">Name :</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Nimal">
+                    <label for="txtOrderCusName" class="form-label">Name :</label>
+                    <input id="txtOrderCusName" type="text" class="form-control"  placeholder="Nimal">
                 </div>
                 <div class="col-6">
-                    <label for="inputSalary" class="form-label">Salary :</label>
-                    <input type="text" class="form-control" id="inputSalary" placeholder="100000.00">
+                    <label for="txtOrderCusTP" class="form-label">Phone :</label>
+                    <input id="txtOrderCusTP" type="text" class="form-control" placeholder="071*******">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address :</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Matara">
+                    <label for="txtOrderCusAddress" class="form-label">Address :</label>
+                    <input  id="txtOrderCusAddress" type="text" class="form-control" placeholder="Matara">
                 </div>
             </form>
         </div>
@@ -189,35 +187,32 @@
                 <legend class="bg-success p-2 text-white bg-opacity-75">Select Items</legend>
                 <div class="col-md-6">
                     <label for="inputItem" class="form-label">Item :</label>
-                    <select id="inputItem" class="form-select">
-                        <option selected>P001</option>
-                        <option>P002</option>
-                        <option>P003</option>
-                        <option>P004</option>
+                    <select id="inputItem" class="form-select" onchange="loadItemCodes()">
+
                     </select>
                 </div>
                 <div class="col-md-6">
-                    <label for="inputItemCode" class="form-label">Item Code :</label>
-                    <input type="password" class="form-control" id="inputItemCode" placeholder="P001">
+                    <label for="txtOrderItemCode" class="form-label">Item Code :</label>
+                    <input type="text" class="form-control " id="txtOrderItemCode" placeholder="P001">
                 </div>
                 <div class="col-5">
-                    <label for="inputItemName" class="form-label">Item Name :</label>
-                    <input type="email" class="form-control" id="inputItemName" placeholder="Salt 1kg">
+                    <label for="txtOrderItemName" class="form-label">Item Name :</label>
+                    <input type="text" class="form-control" id="txtOrderItemName" placeholder="Salt 1kg">
                 </div>
                 <div class="col-4">
-                    <label for="inputPrice" class="form-label">Price :</label>
-                    <input type="text" class="form-control" id="inputPrice" placeholder="50.00">
+                    <label for="txtOrderItemPrice" class="form-label">Price :</label>
+                    <input type="text" class="form-control" id="txtOrderItemPrice" placeholder="50.00">
                 </div>
                 <div class="col-3">
-                    <label for="inputQtyOnHand" class="form-label">QtyOnH :</label>
-                    <input type="text" class="form-control" id="inputQtyOnHand" placeholder="200">
+                    <label for="txtOrderQtyOnHand" class="form-label">QtyOnH :</label>
+                    <input type="text" class="form-control" id="txtOrderQtyOnHand" placeholder="200">
                 </div>
                 <div class="col-12">
-                    <label for="inputOrderQty" class="form-label">Order Qty :</label>
-                    <input type="text" class="form-control" id="inputOrderQty" placeholder="2">
+                    <label for="txtOrderQty" class="form-label">Order Qty :</label>
+                    <input type="text" class="form-control" id="txtOrderQty" >
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-sm btn-secondary me-2" type="button">Add Item</button>
+                    <button id="btnAddToCart" class="btn btn-sm btn-secondary me-2" type="button">Add Item</button>
                 </div>
             </form>
         </div>
@@ -255,28 +250,22 @@
                     <th>Total</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr class="table-hover fw-light">
-                    <th>P001</th>
-                    <th>Salt 1kg</th>
-                    <th>50</th>
-                    <th>2</th>
-                    <th>100</th>
-                </tr>
+                <tbody id="tableCart">
+
                 </tbody>
             </table>
         </div>
     </section>
 </section>
 
-<section id="itemSection" class="container m-md-4">
+<section id="itemSection" class="container-fluid mt-3">
     <section class="row">
-        <div class="col-6 bg-success p-2 text-dark bg-opacity-25 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
+        <div class="col-6  p-2 text-dark bg-opacity-25 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
             <form>
                 <fieldset>
                     <legend class="bg-success p-2 text-white bg-opacity-75">Search Items</legend>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Search here..">
+                        <input id="txtSearchItem" type="text" class="form-control" placeholder="Search here..">
                     </div>
                     <div class="mb-3">
                         <select class="form-select">
@@ -284,61 +273,116 @@
                             <option>ID</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button class="btn btn-secondary">Clear</button>
+                    <button id="btnSearchItem" type="button" class="btn btn-primary">Search</button>
                 </fieldset>
             </form>
         </div>
         <div class="col-6 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3 my-2">
-            <button class="btn btn-warning">New Item</button>
-            <button class="btn btn-secondary">View All</button>
+
+            <button id="openAddNewItem" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#addNewItemModal"
+                    data-bs-whatever="@getbootstrap">New Item
+            </button>
+
+            <div class="modal fade" id="addNewItemModal" tabindex="-1" aria-labelledby="newItemModelLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="newItemModelLabel">Item Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="txtItemCode" class="col-form-label">Item Code:</label>
+                                    <input type="text" class="form-control" id="txtItemCode">
+                                    <p><small class="text-danger pl-1" id="lblitemcode"></small></p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtItemName" class="col-form-label">Item Name:</label>
+                                    <input type="text" class="form-control" id="txtItemName">
+                                    <p><small class="text-danger pl-1" id="lblitemname"></small></p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtItemQty" class="col-form-label">Item Qty:</label>
+                                    <input type="text" class="form-control" id="txtItemQty">
+                                    <p><small class="text-danger pl-1" id="lblitemqty"></small></p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtItemPrice" class="col-form-label">Item Price:</label>
+                                    <input type="text" class="form-control" id="txtItemPrice">
+                                    <p><small class="text-danger pl-1" id="lblitemprice"></small></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btnItemDelete">
+                                Delete
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="btnSaveItem" data-bs-dismiss="modal">Save & Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section class="row p-2">
-        <button class="btn btn-danger col-1 mx-1">Delete</button>
-        <button class="btn btn-success col-1 mx-1">Details</button>
-        <button class="btn btn-primary col-1 mx-1">Clear</button>
-    </section>
 
-    <section class="row p-2">
+    <section class="row mt-4">
+        <div class="col">
         <table class="table table-striped table-info">
             <thead>
             <tr>
+                <th scope="col">Item Code</th>
                 <th scope="col">Item Name</th>
-                <th scope="col">Price</th>
-                <th scope="col">Qty</th>
-                <th scope="col">Price</th>
+                <th scope="col">Item Qty</th>
+                <th scope="col">Item Price</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <th scope="row">Salt</th>
-                <td>50</td>
-                <td>50</td>
-                <td>25000</td>
-            </tr>
-            <tr>
-                <th scope="row">Salt</th>
-                <td>50</td>
-                <td>50</td>
-                <td>25000</td>
-            </tr>
+            <tbody id="itemTable">
+
 
             </tbody>
         </table>
+        </div>
     </section>
+
+
+    <!--  Item  popup modal-->
+    <div class="modal fade" id="errorPopupItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabelItem">Warning..!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Existing Item Code
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="btnUpdateItem" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
 
-<section id="customerSection" class="container m-md-4">
+<section id="customerSection" class="container-fluid mt-3">
     <section class="row">
-        <div class="col-6 bg-success p-2 text-dark bg-opacity-25 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
+        <div class="col-6 p-2 text-dark bg-opacity-25 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
             <form>
                 <fieldset>
                     <legend class="bg-success p-2 text-white bg-opacity-75">Customer Search</legend>
                     <div class="mb-3">
-                        <label for="disabledTextInput"></label><input type="text" id="disabledTextInput"
-                                                                      class="form-control" placeholder="Search here..">
+                        <label for="txtSearchCusID"></label>
+                        <input type="text" id="txtSearchCusID" class="form-control" placeholder="Search here..">
                     </div>
                     <div class="mb-3">
                         <select id="disabledSelect" class="form-select">
@@ -347,107 +391,127 @@
                             <option>NIC</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button class="btn btn-secondary">Clear</button>
+                    <button id="btnSearchCus" type="button" class="btn btn-primary">Search</button>
                 </fieldset>
             </form>
         </div>
         <div class="col-6 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3 my-2">
-            <button class="btn btn-warning">New Customer</button>
-            <button class="btn btn-secondary">View All</button>
+            <button id="openAddNewCustomer" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#cusDetailPopup"
+                    data-bs-whatever="@getbootstrap">New Customer
+            </button>
+
+            <div class="modal fade" id="cusDetailPopup" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Customer Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="txtCusID" class="col-form-label">Customer ID:</label>
+                                    <input type="text" class="form-control" id="txtCusID">
+                                    <p><small class="text-danger pl-1" id="lblcusid"></small></p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtCusName" class="col-form-label">Customer Name:</label>
+                                    <input type="text" class="form-control" id="txtCusName">
+                                    <p><small class="text-danger pl-1" id="lblcusname"></small></p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtCusAddress" class="col-form-label">Customer Address:</label>
+                                    <input type="text" class="form-control" id="txtCusAddress">
+                                    <p><small class="text-danger pl-1" id="lblcusaddress"></small></p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtCusTP" class="col-form-label">Customer Telephone:</label>
+                                    <input type="text" class="form-control" id="txtCusTP">
+                                    <p><small class="text-danger pl-1" id="lblcustp"></small></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btnCusDelete">
+                                Delete
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnClear">
+                                Clear
+                            </button>
+                            <button type="button" class="btn btn-primary" id="btnSaveCustomer" data-bs-dismiss="modal">Save & Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section class="row p-2">
-        <button class="btn btn-danger col-1 mx-1 col-sm-6 col-md-3 col-lg-2 col-xl-1">Delete</button>
-        <button class="btn btn-success col-1 mx-1 col-sm-4 col-md-3 col-lg-2 col-xl-1">Details</button>
-        <button class="btn btn-primary col-1 mx-1 col-sm-4 col-md-3 col-lg-2 col-xl-1">Clear</button>
-    </section>
 
-    <section class="row p-2">
+    <section class="row mt-4">
+        <div class="col">
         <table class="table table-striped table-info">
             <thead>
             <tr>
+                <th scope="col">Customer ID</th>
                 <th scope="col">Customer Name</th>
-                <th scope="col">Age</th>
-                <th scope="col">Tip</th>
-                <th scope="col">Salary</th>
+                <th scope="col">Customer Address</th>
+                <th scope="col">Customer Phone</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <th scope="row">Kamal</th>
-                <td>50</td>
-                <td>50</td>
-                <td>25000</td>
-            </tr>
-            <tr>
-                <th scope="row">Kamal</th>
-                <td>50</td>
-                <td>50</td>
-                <td>25000</td>
-            </tr>
-            <tr>
-                <th scope="row">Kamal</th>
-                <td>50</td>
-                <td>50</td>
-                <td>25000</td>
-            </tr>
+            <tbody id="customerTable">
 
             </tbody>
         </table>
+        </div>
     </section>
+
+<!--    popup modal-->
+    <div class="modal fade" id="errorPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Warning..!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Existing customer Id
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="btnUpdateCus" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
 
 
 <script>
-    document.getElementById("orderSection").style.display = "none";
-    document.getElementById("itemSection").style.display = "none";
-    document.getElementById("customerSection").style.display = "none";
-    document.getElementById("homePage").style.fontWeight = "bold";
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
-    document.getElementById("homePage").addEventListener("click", function () {
-        document.getElementById("orderSection").style.display = "none";
-        document.getElementById("itemSection").style.display = "none";
-        document.getElementById("customerSection").style.display = "none";
-        document.getElementById("homeSection").style.display = "block";
-        document.getElementById("homePage").style.fontWeight = "bold";
-        document.getElementById("orderPage").style.fontWeight = "normal";
-        document.getElementById("itemPage").style.fontWeight = "normal";
-        document.getElementById("customerPage").style.fontWeight = "normal";
-    });
-    document.getElementById("orderPage").addEventListener("click", function () {
-        document.getElementById("homeSection").style.display = "none";
-        document.getElementById("itemSection").style.display = "none";
-        document.getElementById("customerSection").style.display = "none";
-        document.getElementById("orderSection").style.display = "block";
-        document.getElementById("orderPage").style.fontWeight = "bold";
-        document.getElementById("homePage").style.fontWeight = "normal";
-        document.getElementById("itemPage").style.fontWeight = "normal";
-        document.getElementById("customerPage").style.fontWeight = "normal";
-    });
-    document.getElementById("itemPage").addEventListener("click", function () {
-        document.getElementById("orderSection").style.display = "none";
-        document.getElementById("homeSection").style.display = "none";
-        document.getElementById("customerSection").style.display = "none";
-        document.getElementById("itemSection").style.display = "block";
-        document.getElementById("itemPage").style.fontWeight = "bold";
-        document.getElementById("orderPage").style.fontWeight = "normal";
-        document.getElementById("homePage").style.fontWeight = "normal";
-        document.getElementById("customerPage").style.fontWeight = "normal";
-    });
-    document.getElementById("customerPage").addEventListener("click", function () {
-        document.getElementById("homeSection").style.display = "none";
-        document.getElementById("itemSection").style.display = "none";
-        document.getElementById("orderSection").style.display = "none";
-        document.getElementById("customerSection").style.display = "block";
-        document.getElementById("customerPage").style.fontWeight = "bold";
-        document.getElementById("orderPage").style.fontWeight = "normal";
-        document.getElementById("itemPage").style.fontWeight = "normal";
-        document.getElementById("homePage").style.fontWeight = "normal";
-    });
+    $("#inputDate").val(date);
+    //$("#inputDate").val(time);
+
 </script>
 
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="db/DB.js"></script>
+<script src="model/customer.js"></script>
+<script src="model/item.js"></script>
+<script src="model/Order.js"></script>
+<script src="controller/IndexController.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/OrderController.js"></script>
+
 </body>
 </html>
