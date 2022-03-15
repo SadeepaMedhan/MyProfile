@@ -1,7 +1,7 @@
-function cart(code,description,qtyForSale,price){
+function Cart(code,qtyForSale,totPrice){
     var __code=code;
     var __qtyForSale =qtyForSale;
-    var __price = price;
+    var __totPrice =totPrice;
 
     this.setCode=function (code){
         __code=code;
@@ -9,17 +9,18 @@ function cart(code,description,qtyForSale,price){
     this.setQtyForSale=function (qty){
         __qtyForSale=qty;
     }
-    this.setCItemPrice=function (price){
-        __price=price;
+    this.setTotPrice=function (price){
+        __totPrice=price;
+    }
+
+    this.getTotPrice=function (){
+        return __totPrice;
     }
     this.getCItemCode=function (){
         return __code;
     }
     this.getQtyForSale = function (){
         return __qtyForSale;
-    }
-    this.getCItemPrice = function (){
-        return __price;
     }
 
 }

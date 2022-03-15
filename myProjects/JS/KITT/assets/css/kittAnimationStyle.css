@@ -1,0 +1,52 @@
+
+#btnStart {
+    background-color: blue;
+    color: white;
+}
+
+#btnStop {
+    background-color: red;
+    color: white;
+}
+
+body {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+}
+
+body > section:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+body > section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+body > section:nth-child(2) > section:nth-child(1) {
+    display: flex;
+}
+
+body > section:nth-child(2) > section:nth-child(2) {
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+}
+
+body > section:nth-child(1) > h1 {
+    color: white;
+}
+
+div {
+    width: 150px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+body > section:nth-child(2) > section:nth-child(2) > button {
+    margin-right: 10px;
+}

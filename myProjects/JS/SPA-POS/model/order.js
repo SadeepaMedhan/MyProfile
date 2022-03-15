@@ -1,10 +1,10 @@
-function orderDTO(orderId, customerId, date, time, total) {
+function OrderDTO(orderId, customerId, date, time, total,cartList) {
     var __orderId = orderId;
     var __customerId = customerId;
     var __date = date;
     var __time = time;
     var __total = total;
-    var cart;
+    var __cartLis = cartList;
 
     this.setOrderId = function (oId) {
         __orderId = oId;
@@ -21,8 +21,8 @@ function orderDTO(orderId, customerId, date, time, total) {
     this.setTotal = function (total) {
         __total = total;
     }
-    this.setCart = function (cart) {
-        cartItems = cart;
+    this.setCart = function (cartList) {
+        __cartLis = cartList;
     }
     this.getOrderId = function () {
         return __orderId;
@@ -40,7 +40,7 @@ function orderDTO(orderId, customerId, date, time, total) {
         return __total;
     }
     this.getCart = function () {
-        return cart;
+        return __cartLis;
     }
 
 }

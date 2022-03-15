@@ -1,4 +1,5 @@
 
+
 $("#btnSaveItem").click(function () {
     let newItem = new ItemDTO($("#txtItemCode").val(), $("#txtItemName").val(), $("#txtItemQty").val(), $("#txtItemPrice").val());
     if (!searchItem($("#txtItemCode").val())) {
@@ -34,7 +35,7 @@ $("#btnSearchItem").click(function () {
 
     if (!res) {
         clearAllItem();
-        alert("No Such a Customer");
+        alert("No Such a Item");
     } else {
         $("#addNewItemModal").modal('show');
         console.log(res.getItemId());

@@ -74,6 +74,9 @@
                         <!--                        <a href="customerManageIndex.html">Customers</a>-->
                         <label id="customerPage" class="nav-links">Customers</label>
                     </li>
+                    <li class="nav-item mx-1">
+                        <label id="orderList" class="nav-links">All Orders</label>
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <button class="btn btn-outline-success mx-2">Sign Up</button>
@@ -150,35 +153,27 @@
         <div class="col shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3">
             <form class="row g-3">
                 <legend class="bg-success p-2 text-white bg-opacity-75">Customer Details</legend>
-                <div class="col-md-6">
-                    <label for="inputOrderID" class="form-label">Order ID :</label>
-                    <input type="text" class="form-control" id="inputOrderID" placeholder="D001">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputDate" class="form-label">Date :</label>
-                    <input type="text" class="form-control" id="inputDate" placeholder="21/01/2022">
-                </div>
+
                 <div class="col-6">
                     <label for="inputCustomer" class="form-label">Customer :</label>
                     <select id="inputCustomer" class="form-select" onchange="loadCusIds()">
-
                     </select>
                 </div>
                 <div class="col-6">
                     <label for="txtOrderCusID" class="form-label">Customer ID :</label>
-                    <input id="txtOrderCusID" type="text" class="form-control"  placeholder="C001">
+                    <input id="txtOrderCusID" type="text" class="form-control">
                 </div>
                 <div class="col-6">
                     <label for="txtOrderCusName" class="form-label">Name :</label>
-                    <input id="txtOrderCusName" type="text" class="form-control"  placeholder="Nimal">
+                    <input id="txtOrderCusName" type="text" class="form-control">
                 </div>
                 <div class="col-6">
                     <label for="txtOrderCusTP" class="form-label">Phone :</label>
-                    <input id="txtOrderCusTP" type="text" class="form-control" placeholder="071*******">
+                    <input id="txtOrderCusTP" type="text" class="form-control">
                 </div>
                 <div class="col-12">
                     <label for="txtOrderCusAddress" class="form-label">Address :</label>
-                    <input  id="txtOrderCusAddress" type="text" class="form-control" placeholder="Matara">
+                    <input id="txtOrderCusAddress" type="text" class="form-control">
                 </div>
             </form>
         </div>
@@ -193,49 +188,53 @@
                 </div>
                 <div class="col-md-6">
                     <label for="txtOrderItemCode" class="form-label">Item Code :</label>
-                    <input type="text" class="form-control " id="txtOrderItemCode" placeholder="P001">
+                    <input type="text" class="form-control " id="txtOrderItemCode">
                 </div>
                 <div class="col-5">
                     <label for="txtOrderItemName" class="form-label">Item Name :</label>
-                    <input type="text" class="form-control" id="txtOrderItemName" placeholder="Salt 1kg">
+                    <input type="text" class="form-control" id="txtOrderItemName">
                 </div>
                 <div class="col-4">
                     <label for="txtOrderItemPrice" class="form-label">Price :</label>
-                    <input type="text" class="form-control" id="txtOrderItemPrice" placeholder="50.00">
+                    <input type="text" class="form-control" id="txtOrderItemPrice">
                 </div>
                 <div class="col-3">
                     <label for="txtOrderQtyOnHand" class="form-label">QtyOnH :</label>
-                    <input type="text" class="form-control" id="txtOrderQtyOnHand" placeholder="200">
+                    <input type="text" class="form-control" id="txtOrderQtyOnHand">
                 </div>
                 <div class="col-12">
                     <label for="txtOrderQty" class="form-label">Order Qty :</label>
-                    <input type="text" class="form-control" id="txtOrderQty" >
+                    <input type="text" class="form-control" id="txtOrderQty">
                 </div>
                 <div class="col-12">
-                    <button id="btnAddToCart" class="btn btn-sm btn-secondary me-2" type="button">Add Item</button>
+                    <button id="btnAddToCart" class="btn btn-success me-2" type="button">Add Item</button>
                 </div>
             </form>
         </div>
         <div class="col-3 shadow-lg p-3 mb-4  bg-body border rounded  border-2 mt-3  col-12 col-sm-12 col-md-8 col-lg-5 col-xl-3">
             <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="lblOrderID" class="form-label">Order ID :</label>
+                    <h3 id="lblOrderID">O001</h3>
+                </div>
                 <div>
-                    <h3 class="text-primary">Total : 100 Rs/=</h3>
-                    <h3 class="text-danger">SubTotal : 95 Rs/=</h3>
+                    <h3 id="lblTotalPrice" class="text-primary">Total : 0 Rs/=</h3>
+                    <h3 id="lblSubTotal" class="text-danger">SubTotal : 0 Rs/=</h3>
                 </div>
                 <div class="col-md-6">
                     <label for="inputCash" class="form-label">Cash</label>
-                    <input type="email" class="form-control" id="inputCash" placeholder="500">
+                    <input type="text" class="form-control" id="inputCash">
                 </div>
                 <div class="col-md-6">
                     <label for="inputDiscount" class="form-label">Discount</label>
-                    <input type="password" class="form-control" id="inputDiscount" placeholder="10">
+                    <input type="text" class="form-control" id="inputDiscount">
                 </div>
                 <div class="col-12">
                     <label for="inputBalance" class="form-label">Balance</label>
-                    <input type="text" class="form-control" id="inputBalance" placeholder="405">
+                    <input type="text" class="form-control" id="inputBalance">
                 </div>
                 <div class="col-12 mx-auto" style="width: 100px">
-                    <button id="purchaseBtn" type="submit" class="btn btn-sm btn-success">Purchase</button>
+                    <button id="btnPurchase" type="button" class="btn btn-warning">Purchase</button>
                 </div>
             </form>
         </div>
@@ -248,6 +247,7 @@
                     <th>Price</th>
                     <th>Quantity</th>
                     <th>Total</th>
+                    <th>#</th>
                 </tr>
                 </thead>
                 <tbody id="tableCart">
@@ -322,7 +322,9 @@
                                 Delete
                             </button>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="btnSaveItem" data-bs-dismiss="modal">Save & Update</button>
+                            <button type="button" class="btn btn-primary" id="btnSaveItem" data-bs-dismiss="modal">Save
+                                & Update
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -334,20 +336,20 @@
 
     <section class="row mt-4">
         <div class="col">
-        <table class="table table-striped table-info">
-            <thead>
-            <tr>
-                <th scope="col">Item Code</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Item Qty</th>
-                <th scope="col">Item Price</th>
-            </tr>
-            </thead>
-            <tbody id="itemTable">
+            <table class="table table-striped table-info">
+                <thead>
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Item Qty</th>
+                    <th scope="col">Item Price</th>
+                </tr>
+                </thead>
+                <tbody id="itemTable">
 
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
         </div>
     </section>
 
@@ -366,7 +368,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button id="btnUpdateItem" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Update</button>
+                    <button id="btnUpdateItem" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Update
+                    </button>
                 </div>
             </div>
         </div>
@@ -441,7 +444,9 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnClear">
                                 Clear
                             </button>
-                            <button type="button" class="btn btn-primary" id="btnSaveCustomer" data-bs-dismiss="modal">Save & Update</button>
+                            <button type="button" class="btn btn-primary" id="btnSaveCustomer" data-bs-dismiss="modal">
+                                Save & Update
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -453,23 +458,23 @@
 
     <section class="row mt-4">
         <div class="col">
-        <table class="table table-striped table-info">
-            <thead>
-            <tr>
-                <th scope="col">Customer ID</th>
-                <th scope="col">Customer Name</th>
-                <th scope="col">Customer Address</th>
-                <th scope="col">Customer Phone</th>
-            </tr>
-            </thead>
-            <tbody id="customerTable">
+            <table class="table table-striped table-info">
+                <thead>
+                <tr>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Customer Address</th>
+                    <th scope="col">Customer Phone</th>
+                </tr>
+                </thead>
+                <tbody id="customerTable">
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
         </div>
     </section>
 
-<!--    popup modal-->
+    <!--    popup modal-->
     <div class="modal fade" id="errorPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
          aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -483,7 +488,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button id="btnUpdateCus" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Update</button>
+                    <button id="btnUpdateCus" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Update
+                    </button>
                 </div>
             </div>
         </div>
@@ -491,13 +497,30 @@
 
 </section>
 
+<section id="orderListSection" class="container-fluid mt-3">
+    <div class=" shadow-lg">
+        <table class="table table-bordered table-hover m-0">
+            <thead class="table-secondary">
+            <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Item Qty</th>
+                <th>Date</th>
+                <th>Total Price</th>
+            </tr>
+            </thead>
+            <tbody id="tableOrderList">
+
+            </tbody>
+        </table>
+    </div>
+</section>
 
 <script>
     var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
-    $("#inputDate").val(date);
     //$("#inputDate").val(time);
 
 </script>
@@ -507,7 +530,8 @@
 <script src="db/DB.js"></script>
 <script src="model/customer.js"></script>
 <script src="model/item.js"></script>
-<script src="model/Order.js"></script>
+<script src="model/order.js"></script>
+<script src="model/cart.js"></script>
 <script src="controller/IndexController.js"></script>
 <script src="controller/CustomerController.js"></script>
 <script src="controller/ItemController.js"></script>

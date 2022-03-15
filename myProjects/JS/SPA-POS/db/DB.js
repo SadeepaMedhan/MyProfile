@@ -1,11 +1,29 @@
+var customerDB = [];
+var itemDB = [];
+var orderDB = [];
+var cartDB = [];
 
+function addCart(cart) {
+    for (let i = 0; i < cartDB.length; i++) {
+        if (cartDB[i].getCItemCode() === cart.getCItemCode()) {
 
-var customerDB = new Array();
-var itemDB = new Array();
-var orderDB = new Array();
-var cartDB = new Array();
+            const qty = Number(cartDB[i].getQtyForSale()) ;
+            const newQty = Number(cart.getQtyForSale());
+            cartDB[i].setQtyForSale(qty + newQty);
 
+            let tot = cartDB[i].getTotPrice();
+            cartDB[i].setTotPrice(tot + cart.getTotPrice());
+            //console.log(qty, tot);
+            return;
+        }
+    }
+    cartDB.push(cart);
+}
 
+function saveOrder(order) {
+    orderDB.push(order);
+    //console.log(orderDB[0].getCart());
+}
 
 function saveCustomer(customer) {
     customerDB.push(customer);
@@ -19,7 +37,7 @@ function saveCustomer(customer) {
     });
 }
 
-function updateCustomer(id, name, address , tp){
+function updateCustomer(id, name, address, tp) {
     for (let i = 0; i < customerDB.length; i++) {
         if (customerDB[i].getCusId() === id) {
             customerDB[i].setCusName(name);
@@ -65,7 +83,7 @@ function saveItem(item) {
     });
 }
 
-function updateItem(code, name, qty , price){
+function updateItem(code, name, qty, price) {
     for (let i = 0; i < itemDB.length; i++) {
         if (itemDB[i].getItemId() === code) {
             itemDB[i].setItemName(name);
@@ -100,29 +118,26 @@ function deleteItem(code) {
 }
 
 
-
-
-
-
-function loadAllCusID(){
+function loadAllCusID() {
     $("#inputCustomer").empty();
     $("#inputCustomer").append(`<option value="" disabled selected hidden>Select ID</option>`);
     for (let i = 0; i < customerDB.length; i++) {
-        let id=   `<option value="${customerDB[i].getCusId()}">${customerDB[i].getCusId()}</option>`;
+        let id = `<option value="${customerDB[i].getCusId()}">${customerDB[i].getCusId()}</option>`;
         $("#inputCustomer").append(id);
     }
 }
-function loadAllItemID(){
+
+function loadAllItemID() {
     $("#inputItem").empty();
     $("#inputItem").append(`<option value="" disabled selected hidden>Select ID</option>`);
     for (let i = 0; i < itemDB.length; i++) {
-        let code= `<option value="${itemDB[i].getItemId()}">${itemDB[i].getItemId()}</option>`;
+        let code = `<option value="${itemDB[i].getItemId()}">${itemDB[i].getItemId()}</option>`;
         $("#inputItem").append(code);
     }
 }
 
 
-function loadCusDetails(id){
+function loadCusDetails(id) {
     for (let i = 0; i < customerDB.length; i++) {
         if (customerDB[i].getCusId() === id) {
             $("#txtOrderCusID").val(customerDB[i].getCusId());
@@ -132,7 +147,8 @@ function loadCusDetails(id){
         }
     }
 }
-function loadItemDetails(id){
+
+function loadItemDetails(id) {
     for (let i = 0; i < itemDB.length; i++) {
         if (itemDB[i].getItemId() === id) {
             $("#txtOrderItemCode").val(itemDB[i].getItemId());
@@ -142,3 +158,21 @@ function loadItemDetails(id){
         }
     }
 }
+
+
+function getOrderID() {
+    try {
+        let lastOID = orderDB[orderDB.length - 1].getOrderId();
+        let newOID = parseInt(lastOID.substring(1, 4)) + 1;
+        if (newOID < 10) {
+            $("#lblOrderID").text("O00" + newOID);
+        } else if (newOID < 100) {
+            $("#lblOrderID").text("O0" + newOID);
+        } else {
+            $("#lblOrderID").text("O" + newOID);
+        }
+    } catch (e) {
+        $("#lblOrderID").text("O001");
+    }
+}
+
