@@ -1,0 +1,1583 @@
+* {
+    color: antiquewhite;
+}
+
+.highLight {
+    color: #55a4c1;
+}
+
+header {
+    position: relative;
+    height: 60px;
+    background: #171515;
+}
+
+body > main > section {
+    height: 100vh;
+    background: #121218;
+}
+
+p, pre, h2, h3, hr {
+    margin: 0;
+    font-family: monospace;
+}
+
+
+h2 {
+    font-size: 34px;
+}
+
+body > header > h2 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 13px 0 0 25px;
+}
+
+/*----------navigation list-----------*/
+header > ul {
+    position: absolute;
+    right: 30px;
+    font-size: 24px;
+    font-family: cursive;
+    list-style: none;
+    margin: 0;
+}
+
+header > ul > li {
+    padding: 15px 10px 0 10px;
+    display: inline-block;
+}
+
+header > ul > li:hover {
+    cursor: pointer;
+    color: deepskyblue;
+}
+
+#homePage {
+    /*background: url("assets/image/design.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    background: #121218;
+}
+
+#about, #skills, #education, #project {
+    background: linear-gradient(to top, #121218, #0b1b42, #121218);
+}
+
+#contact {
+    background: url("../image/backgroundDark.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cv-button {
+    text-decoration: none;
+    position: absolute;
+    bottom: 175px;
+    left: 57px;
+    margin: auto;
+    font-size: 20px;
+    width: 121px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.cv-button:hover {
+    color: #55a4c1;
+}
+
+.web-button{
+    text-decoration: none;
+}.web-button:hover{
+     color: #72c6e5;
+ }
+
+/*-------my name---------*/
+body > main > section:nth-child(2) > div > div {
+    position: absolute;
+    left: 59px;
+    top: 183px;
+    margin: auto;
+}
+
+body > main > section:nth-child(2) > div > div > p {
+    font-size: 65px;
+}
+
+body > main > section:nth-child(2) > div > ul {
+    position: absolute;
+    left: 163px;
+    top: 397px;
+    margin: auto;
+    font-size: 65px;
+    font-family: monospace;
+    list-style: none;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+body > main > section:nth-child(2) > div > ul > li {
+    position: relative;
+    top: 0;
+    animation: sliding 6s steps(3) infinite;
+}
+
+@keyframes sliding {
+    100% {
+        top: -270px;
+    }
+}
+
+body > main > section:nth-child(2) > div > ul > li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #121218;
+    border-left: 5px solid #55a4c1;
+    animation: typing 2s steps(16) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/*-----my image-------*/
+body > main > section:nth-child(2) {
+    position: relative;
+}
+
+body > main > section:nth-child(2) > aside > img {
+    position: absolute;
+    width: 450px;
+    right: 16vw;
+    bottom: 0;
+    margin: auto;
+    opacity: 80%;
+}
+
+/*------------side button--------------*/
+body > main > section:nth-child(1) {
+    width: 38px;
+    height: 160px;
+    position: fixed;
+    right: 10px;
+    bottom: 20vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+body > main > section:nth-child(1) > div:hover {
+    cursor: pointer;
+    background: deepskyblue;
+    background-size: contain;
+}
+
+body > main > section:nth-child(1) > div {
+    height: 100%;
+    background-size: contain;
+}
+
+body > main > section:nth-child(1) > div:nth-child(1) {
+    background-image: url("../image/icon/github.png");
+}
+
+body > main > section:nth-child(1) > div:nth-child(2) {
+    background-image: url("../image/icon/linkedin.png");
+}
+
+body > main > section:nth-child(1) > div:nth-child(3) {
+    background-image: url("../image/icon/facebook.png");
+}
+
+body > main > section:nth-child(1) > div:nth-child(4) {
+    background-image: url("../image/icon/whatsapp.png");
+}
+
+/*------titles------*/
+body > main > section > h2 {
+    position: absolute;
+    font-size: 40px;
+    left: 60px;
+    padding-top: 15px;
+}
+
+
+/*-- About --*/
+body > main > section:nth-child(4) > section:nth-child(2) {
+    position: relative;
+}
+
+body > main > section:nth-child(4) > section:nth-child(2) > img {
+    width: 350px;
+    position: absolute;
+    left: 12vw;
+    top: 20vh;
+    opacity: 50%;
+}
+
+body > main > section:nth-child(4) > section:nth-child(3) {
+    position: relative;
+}
+
+body > main > section:nth-child(4) > section:nth-child(3) > article {
+    position: absolute;
+    width: 50vw;
+    right: 5vw;
+    top: 25vh;
+    font-size: 25px;
+}
+
+body > main > section:nth-child(4) > section:nth-child(3) > article > ul {
+    list-style: none;
+}
+
+/*-- Skills --*/
+body > main > section:nth-child(6) > section:nth-child(2) > h3 {
+    position: absolute;
+    width: fit-content;
+    height: max-content;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    top: 80px;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) > div {
+    position: absolute;
+    height: 3px;
+    width: 200px;
+    background: linear-gradient(to left, #121218, white, #121218);
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 114px;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) {
+    position: relative;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) > section {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 160px;
+}
+
+body > main > section:nth-child(6) > section > section > div:hover {
+    cursor: pointer;
+    border: 2px solid #55a4c1;
+}
+
+body > main > section:nth-child(6) > section > section > div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) {
+    position: relative;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) > h3 {
+    position: absolute;
+    width: fit-content;
+    height: max-content;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    top: 250px;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) > div {
+    position: absolute;
+    height: 3px;
+    width: 200px;
+    background: linear-gradient(to left, #121218, white, #121218);
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 287px;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) > section {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 350px;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(1) {
+    background: url("../image/icon/ps.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(2) {
+    background: url("../image/icon/xd.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(3) {
+    background: url("../image/icon/figma.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(4) {
+    background: url("../image/icon/arduino.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(5) {
+    background: url("../image/icon/inteelllij.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(6) {
+    background: url("../image/icon/vs.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(1) {
+    background: url("../image/icon/java.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(2) {
+    background: url("../image/icon/mysql.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(3) {
+    background: url("../image/icon/c_sharp.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(4) {
+    background: url("../image/icon/html55.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(5) {
+    background: url("../image/icon/js.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(6) {
+    background: url("../image/icon/python.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*-- Education --*/
+body > main > section:nth-child(8) > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    height: 600px;
+    width: 68vw;
+    top: 144px;
+    bottom: 0;
+    right: 0;
+    left: 60px;
+    margin: auto;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section > section {
+    position: relative;
+    height: 202px;
+    width: 100%;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section > section > div {
+    position: absolute;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin: auto;
+    border: 1px solid white;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section > section > p {
+    position: absolute;
+    font-size: 25px;
+    width: fit-content;
+    top: 12px;
+    left: 92px;
+    margin: auto;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section > section > section {
+    position: absolute;
+    height: 139px;
+    width: 6px;
+    left: 28px;
+    top: 62px;
+    background: white;
+    margin: auto;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(1) > div {
+    background: url("../image/icon/icons8-school-building-64.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > div {
+    background: url("../image/icon/icons8-school-64.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div {
+    background: url("../image/icon/icons8-university-50.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > section:nth-child(1) > div {
+    background: url("../image/icon/icon2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > section:nth-child(2) > div {
+    background: url("../image/icon/icon-laptop.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*-- Projects --*/
+body > main > section:nth-child(10) > section:nth-child(2) > div {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+body > main > section:nth-child(10) > section > div > h3:hover {
+    cursor: pointer;
+    color: deepskyblue;
+}
+
+body > main > section:nth-child(10) > section > div > h3 {
+    font-size: 25px;
+}
+
+body > main > section:nth-child(10) > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 160px;
+}
+
+body > main > section:nth-child(10) {
+    position: relative;
+}
+
+.gallery_img {
+    width: 300px;
+    height: 200px;
+    border-radius: 2px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 10;
+    outline-offset: 10px;
+    transition: all 0.2s;
+}
+
+.gallery {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    top: 247px;
+}
+
+.gallery_img-1 {
+    top: 0;
+    left: 0;
+}
+
+.gallery_img-2 {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.gallery_img-3 {
+    top: 40px;
+    left: 20%;
+}
+
+.gallery_img-4 {
+    top: 60px;
+    left: 40%;
+}
+
+.gallery_img-5 {
+    top: 40px;
+    left: 60%;
+    z-index: 2;
+}
+
+.gallery_img:hover {
+    outline: 10px solid #55a4c1;
+    transform: scale(1.05) translateY(-20px);
+    z-index: 20;
+}
+
+.view-button {
+    position: absolute;
+    right: 76px;
+    bottom: 58px;
+    margin: auto;
+    font-size: 20px;
+}
+
+/*Contact*/
+body > main > section:nth-child(12) {
+    position: relative;
+}
+
+body > main > section:nth-child(12) > section {
+    width: 80vw;
+    height: 480px;
+    position: relative;
+    top: 214px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(1) {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(1) > div > input {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #afa7a7;
+    background: transparent;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(1) > div:nth-child(3) > input {
+    height: 80px;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(1) > div > button:hover {
+    cursor: pointer;
+    border: 3px solid #93ecec;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(1) > div > button {
+    width: 90%;
+    height: 40px;
+    border-radius: 15px;
+    background: transparent;
+    font-size: 20px;
+    border: 2px solid dodgerblue;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 90px;
+    top: -25px;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > h2 {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
+    font-size: 24px;
+    list-style: none;
+    position: absolute;
+    margin: auto;
+    top: 90px;
+    white-space: break-spaces;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > div {
+    height: 50px;
+    width: 50px;
+}
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:hover {
+    cursor: pointer;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > section {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    top: 376px;
+    left: 2px;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(1) {
+    background: url("../image/icon/github.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(2) {
+    background: url("../image/icon/facebook.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(3) {
+    background: url("../image/icon/linkedin.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(4) {
+    background: url("../image/icon/whatsapp.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(5) {
+    background: url("../image/icon/instagram.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(6) {
+    background: url("../image/icon/twitter.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*-------------------Responsive------------------*/
+@media all and (max-width: 1440px) {
+    body > main > section:nth-child(2) > aside > img {
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1366px){
+    /*image*/
+    body > main > section:nth-child(2) > aside > img {
+        width: 360px;
+        right: 16vw;
+    }
+
+    body > main > section:nth-child(2) > div > div > p {
+        font-size: 60px;
+    }
+
+    body > main > section:nth-child(2) > div > ul {
+        left: 154px;
+        top: 337px;
+        font-size: 60px;
+    }
+
+    body > main > section:nth-child(2) > div > div {
+        top: 141px;
+    }
+
+    /*contact*/
+    body > main > section:nth-child(12) > section {
+        height: 435px;
+    }
+
+    /*skills*/
+    body > main > section:nth-child(6) > section:nth-child(2) > section {
+        top: 155px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(3) > h3 {
+        top: 195px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(3) > div {
+        top: 233px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(3) > section {
+        top: 279px;
+    }
+
+    /*-- Education --*/
+    body > main > section:nth-child(8) > section:nth-child(2) {
+        height: 508px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section {
+        height: 170px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > section {
+        height: 108px;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px){
+    header > ul {
+        display: none;
+    }
+
+    body > main > section:nth-child(1) {
+        display: none;
+    }
+
+    /*image*/
+    body > main > section:nth-child(2) > aside > img {
+        width: 308px;
+        right: 0vw;
+    }
+
+    body > main > section:nth-child(2) > div > div > p {
+        font-size: 40px;
+    }
+
+    body > main > section:nth-child(2) > div > ul {
+        left: 101px;
+        top: 184px;
+        font-size: 40px;
+    }
+
+    body > main > section:nth-child(2) > div > div {
+        top: 69px;
+    }
+
+    /*about*/
+    body > main > section:nth-child(4) > section:nth-child(2) > img {
+        width: 270px;
+        left: 6vw;
+        top: 20vh;
+    }
+
+    body > main > section:nth-child(4) > section:nth-child(3) > article {
+        width: 50vw;
+        right: 5vw;
+        top: 19vh;
+        font-size: 20px;
+    }
+
+    /*skills*/
+    body > main > section:nth-child(6) > section > section > div {
+        width: 56px;
+        height: 56px;
+    }
+
+    /*education*/
+    body > main > section:nth-child(8) > section:nth-child(2) {
+        height: 395px;
+        width: 87vw;
+        left: 25px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > div {
+        height: 45px;
+        width: 45px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > section {
+        height: 86px;
+        width: 4px;
+        left: 22px;
+        top: 47px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > p {
+        font-size: 20px;
+        top: 2px;
+        left: 57px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section {
+        height: 134px;
+    }
+
+    /*project*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div {
+        width: 195px;
+        height: 26px;
+    }
+
+    body > main > section:nth-child(10) > section > div > h3 {
+        font-size: 21px;
+    }
+
+    .gallery_img {
+        width: 246px;
+        height: 148px;
+    }
+
+    .gallery {
+        width: 685px;
+        top: 214px;
+    }
+
+    .gallery_img-3 {
+        left: 11%;
+    }
+
+    .gallery_img-4 {
+        left: 33%;
+    }
+
+    .gallery_img-5 {
+        left: 55%;
+    }
+
+
+    /*contact*/
+    body > main > section:nth-child(12) > section {
+        height: 311px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div > input {
+        height: 25px;
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div:nth-child(3) > input {
+        height: 63px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div > button {
+        height: 32px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) {
+        left: 46px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > h2 {
+        font-size: 24px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
+        font-size: 20px;
+        white-space: pre-line;
+        top: 78px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > section {
+        top: 279px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > section > div {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 425px){
+    header > ul {
+        display: none;
+    }
+
+    body > main > section:nth-child(1) {
+        display: none;
+    }
+
+    h2{
+        font-size: 22px !important;
+    }
+
+    h3{
+        font-size: 18px!important;
+    }
+
+    .cv-button {
+        bottom: 332px;
+        left: 286px;
+        font-size: 16px;
+        width: 96px;
+        height: 18px;
+    }
+
+    /*image*/
+    body > main > section:nth-child(2) > aside > img {
+        width: 212px;
+        right: 18vw;
+    }
+
+    body > main > section:nth-child(2) > div > div > p {
+        font-size: 21px;
+    }
+
+    body > main > section:nth-child(2) > div > ul {
+        left: 55px;
+        top: 92px;
+        font-size: 21px;
+    }
+
+    body > main > section:nth-child(2) > div > ul > li::after {
+        height: 75%;
+        width: 100%;
+    }
+
+    body > main > section:nth-child(2) > div > div {
+        top: 53px;
+        left: 40px;
+    }
+
+    /*about*/
+    body > main > section:nth-child(4) > section:nth-child(2) > img {
+        width: 209px;
+        left: 24vw;
+        top: 52vh;
+    }
+
+    body > main > section:nth-child(4) > section:nth-child(3) > article {
+        width: 87vw;
+        right: 5vw;
+        top: 16vh;
+        font-size: 16px;
+    }
+    body > main > section:nth-child(4) > section:nth-child(3) > article>ul {
+        width: 292px;
+        position: absolute;
+        left: -7px;
+        top: 67px;
+        margin: auto;
+        font-size: 16px
+    }
+
+    /*skills*/
+    body > main > section:nth-child(6) > section > section > div {
+        width: 38px;
+        height: 38px;
+    }body > main > section:nth-child(6) > section:nth-child(3)>h3{
+         top: 193px;
+     }body > main > section:nth-child(6) > section:nth-child(3)>div{
+          top: 227px;
+      }body > main > section:nth-child(6) > section:nth-child(3)>section{
+           top: 276px;
+       }
+
+
+    /*education*/
+    body > main > section:nth-child(8) > section:nth-child(2) {
+        height: 379px;
+        width: 85vw;
+        left: -12px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > div {
+        height: 45px;
+        width: 45px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > section {
+        height: 86px;
+        width: 4px;
+        left: 22px;
+        top: 47px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > p {
+        font-size: 10px;
+        top: 2px;
+        left: 57px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section {
+        height: 134px;
+    }
+
+    /*project*/
+    body > main > section:nth-child(10) > section:nth-child(2) {
+        top: 106px;
+    }
+
+    body > main > section:nth-child(10) > section:nth-child(2) > div {
+        width: 116px;
+        height: 23px;
+    }
+
+    body > main > section:nth-child(10) > section > div > h3 {
+        font-size: 17px;
+    }
+
+    .gallery_img {
+        width: 165px;
+        height: 100px;
+    }
+
+    .gallery {
+        width: 239px;
+        top: 124px;
+    }
+
+    .gallery_img-1 {
+        top: 0;
+        left: 29px;
+    }
+
+    .gallery_img-2 {
+        top: 130px;
+        left: 29px;
+    }
+
+    .gallery_img-3 {
+        display: none;
+    }
+
+    .gallery_img-4 {
+        display: none;
+
+    }
+
+    .gallery_img-5 {
+        display: none;
+
+    }
+
+
+    /*contact*/
+    .contact-tittle {
+        font-size: 22px !important;
+    }
+
+    body > main > section:nth-child(12) > section {
+        height: 384px;
+        flex-direction: column;
+        top: 134px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div > input {
+        height: 25px;
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1){
+        width: 100%;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div:nth-child(3) > input {
+        height: 63px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div > button {
+        height: 32px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) {
+        left: 16px;
+        width: 100%;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > h2 {
+        font-size: 15px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
+        font-size: 12px;
+        white-space: pre-line;
+        top: 78px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > section {
+        top: 189px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > section > div {
+        height: 19px;
+        width: 19px;
+    }
+
+}
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+    header > ul {
+        display: none;
+    }
+
+    body > main > section:nth-child(1) {
+        display: none;
+    }
+
+    h2{
+        font-size: 22px !important;
+    }
+
+    h3{
+        font-size: 18px!important;
+    }
+
+    .cv-button {
+        bottom: 332px;
+        left: 243px;
+        font-size: 16px;
+        width: 96px;
+        height: 18px;
+    }
+
+    /*image*/
+    body > main > section:nth-child(2) > aside > img {
+        width: 212px;
+        right: 18vw;
+    }
+
+    body > main > section:nth-child(2) > div > div > p {
+        font-size: 21px;
+    }
+
+    body > main > section:nth-child(2) > div > ul {
+        left: 63px;
+        top: 92px;
+        font-size: 21px;
+    }
+
+    body > main > section:nth-child(2) > div > ul > li::after {
+        height: 75%;
+        width: 100%;
+    }
+
+    body > main > section:nth-child(2) > div > div {
+        top: 53px;
+        left: 40px;
+    }
+
+    /*about*/
+    body > main > section:nth-child(4) > section:nth-child(2) > img {
+        width: 209px;
+        left: 20vw;
+        top: 52vh;
+    }
+
+    body > main > section:nth-child(4) > section:nth-child(3) > article {
+        width: 87vw;
+        right: 5vw;
+        top: 16vh;
+        font-size: 15px;
+    }
+    body > main > section:nth-child(4) > section:nth-child(3) > article>ul {
+        width: 292px;
+        position: absolute;
+        left: -16px;
+        top: 74px;
+        margin: auto;
+        font-size: 15px
+    }
+
+    /*skills*/
+    body > main > section:nth-child(6) > section > section > div {
+        width: 38px;
+        height: 38px;
+    }
+    body > main > section:nth-child(6) > section:nth-child(3)>h3{
+        top: 193px;
+    }body > main > section:nth-child(6) > section:nth-child(3)>div{
+         top: 227px;
+     }body > main > section:nth-child(6) > section:nth-child(3)>section{
+          top: 276px;
+      }
+
+
+    /*education*/
+    body > main > section:nth-child(8) > section:nth-child(2) {
+        height: 379px;
+        width: 78vw;
+        left: -28px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > div {
+        height: 45px;
+        width: 45px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > section {
+        height: 86px;
+        width: 4px;
+        left: 22px;
+        top: 47px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > p {
+        font-size: 10px;
+        top: 2px;
+        left: 57px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section {
+        height: 134px;
+    }
+
+    /*project*/
+    body > main > section:nth-child(10) > section:nth-child(2) {
+        top: 106px;
+    }
+
+    body > main > section:nth-child(10) > section:nth-child(2) > div {
+        width: 116px;
+        height: 23px;
+    }
+
+    body > main > section:nth-child(10) > section > div > h3 {
+        font-size: 17px;
+    }
+
+    .gallery_img {
+        width: 165px;
+        height: 100px;
+    }
+
+    .gallery {
+        width: 239px;
+        top: 124px;
+    }
+
+    .gallery_img-1 {
+        top: 0;
+        left: 29px;
+    }
+
+    .gallery_img-2 {
+        top: 130px;
+        left: 29px;
+    }
+
+    .gallery_img-3 {
+        display: none;
+    }
+
+    .gallery_img-4 {
+        display: none;
+
+    }
+
+    .gallery_img-5 {
+        display: none;
+
+    }
+
+
+    /*contact*/
+    .contact-tittle {
+        font-size: 22px !important;
+    }
+
+    body > main > section:nth-child(12) > section {
+        height: 384px;
+        flex-direction: column;
+        top: 134px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div > input {
+        height: 25px;
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1){
+        width: 100%;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div:nth-child(3) > input {
+        height: 63px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div > button {
+        height: 32px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) {
+        left: 16px;
+        width: 100%;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > h2 {
+        font-size: 15px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
+        font-size: 12px;
+        white-space: pre-line;
+        top: 78px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > section {
+        top: 189px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > section > div {
+        height: 19px;
+        width: 19px;
+    }
+}
+
+@media all and (max-width: 320px){
+    header > ul {
+        display: none;
+    }
+
+    body > main > section:nth-child(1) {
+        display: none;
+    }
+
+    h2{
+        font-size: 22px !important;
+    }
+
+    h3{
+        font-size: 18px!important;
+    }
+
+    .cv-button {
+        bottom: 332px;
+        left: 189px;
+        font-size: 16px;
+        width: 96px;
+        height: 18px;
+    }
+
+    /*image*/
+    body > main > section:nth-child(2) > aside > img {
+        width: 212px;
+        right: 18vw;
+    }
+
+    body > main > section:nth-child(2) > div > div > p {
+        font-size: 21px;
+    }
+
+    body > main > section:nth-child(2) > div > ul {
+        left: 63px;
+        top: 92px;
+        font-size: 21px;
+    }
+
+    body > main > section:nth-child(2) > div > ul > li::after {
+        height: 75%;
+        width: 100%;
+    }
+
+    body > main > section:nth-child(2) > div > div {
+        top: 53px;
+        left: 40px;
+    }
+
+    /*about*/
+    body > main > section:nth-child(4) > section:nth-child(2) > img {
+        width: 209px;
+        left: 18vw;
+        top: 52vh;
+    }
+
+    body > main > section:nth-child(4) > section:nth-child(3) > article {
+        width: 87vw;
+        right: 5vw;
+        top: 16vh;
+        font-size: 15px;
+    }
+    body > main > section:nth-child(4) > section:nth-child(3) > article>ul {
+        width: 292px;
+        position: absolute;
+        left: -39px;
+        top: 74px;
+        margin: auto;
+        font-size: 15px
+    }
+
+    /*skills*/
+    body > main > section:nth-child(6) > section > section > div {
+        width: 38px;
+        height: 38px;
+    }
+    body > main > section:nth-child(6) > section:nth-child(3)>h3{
+        top: 193px;
+    }body > main > section:nth-child(6) > section:nth-child(3)>div{
+         top: 227px;
+     }body > main > section:nth-child(6) > section:nth-child(3)>section{
+          top: 276px;
+      }
+
+    /*education*/
+    body > main > section:nth-child(8) > section:nth-child(2) {
+        height: 379px;
+        width: 78vw;
+        left: -28px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > div {
+        height: 45px;
+        width: 45px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > section {
+        height: 86px;
+        width: 4px;
+        left: 22px;
+        top: 47px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section > p {
+        font-size: 10px;
+        top: 2px;
+        left: 57px;
+    }
+
+    body > main > section:nth-child(8) > section:nth-child(2) > section > section {
+        height: 134px;
+    }
+
+    /*project*/
+    body > main > section:nth-child(10) > section:nth-child(2) {
+        top: 106px;
+    }
+
+    body > main > section:nth-child(10) > section:nth-child(2) > div {
+        width: 116px;
+        height: 23px;
+    }
+
+    body > main > section:nth-child(10) > section > div > h3 {
+        font-size: 17px;
+    }
+
+    .gallery_img {
+        width: 165px;
+        height: 100px;
+    }
+
+    .gallery {
+        width: 239px;
+        top: 124px;
+    }
+
+    .gallery_img-1 {
+        top: 0;
+        left: 29px;
+    }
+
+    .gallery_img-2 {
+        top: 130px;
+        left: 29px;
+    }
+
+    .gallery_img-3 {
+        display: none;
+    }
+
+    .gallery_img-4 {
+        display: none;
+
+    }
+
+    .gallery_img-5 {
+        display: none;
+
+    }
+
+
+    /*contact*/
+    .contact-tittle {
+        font-size: 22px !important;
+    }
+
+    body > main > section:nth-child(12) > section {
+        height: 384px;
+        flex-direction: column;
+        top: 134px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div > input {
+        height: 25px;
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1){
+        width: 100%;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div:nth-child(3) > input {
+        height: 63px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(1) > div > button {
+        height: 32px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) {
+        left: 16px;
+        width: 100%;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > h2 {
+        font-size: 15px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
+        font-size: 12px;
+        white-space: pre-line;
+        top: 78px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > section {
+        top: 189px;
+    }
+
+    body > main > section:nth-child(12) > section > section:nth-child(2) > section > div {
+        height: 19px;
+        width: 19px;
+    }
+
+}
