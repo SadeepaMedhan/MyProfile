@@ -1581,3 +1581,22 @@ body > main > section:nth-child(12) > section > section:nth-child(2) > section >
     }
 
 }
+
+
+#loader-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: black;
+    z-index: 3;
+}
+#loader-container>img{
+    width: 220px;
+    height: 110px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
