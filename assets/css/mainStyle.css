@@ -211,20 +211,35 @@ body > main > section > h2 {
     font-size: 40px;
     left: 60px;
     padding-top: 15px;
+    z-index: 5;
 }
 
 
 /*-- About --*/
-body > main > section:nth-child(4) > section:nth-child(2) {
+body > main > section:nth-child(4) {
     position: relative;
 }
 
-body > main > section:nth-child(4) > section:nth-child(2) > img {
-    width: 350px;
+#imgFrame {
     position: absolute;
-    left: 12vw;
-    top: 20vh;
-    opacity: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 98%;
+    height: 98%;
+   background: black;
+    opacity: 60%;
+}
+
+
+#about {
+    background: url("../image/myImg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    /*opacity: 50%;*/
 }
 
 body > main > section:nth-child(4) > section:nth-child(3) {
@@ -234,7 +249,7 @@ body > main > section:nth-child(4) > section:nth-child(3) {
 body > main > section:nth-child(4) > section:nth-child(3) > article {
     position: absolute;
     width: 50vw;
-    right: 5vw;
+    left: 8vw;
     top: 25vh;
     font-size: 25px;
 }
