@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="assets/css/mainStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -18,6 +19,7 @@
 </div>
 
 <header>
+
     <h2>Sadeepa Medhan</h2>
     <ul>
         <li>Home</li>
@@ -27,6 +29,9 @@
         <li>Projects</li>
         <li>Contact</li>
     </ul>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
 </header>
 
 <main>
@@ -49,8 +54,7 @@
                 <li>Web Developer</li>
                 <li>Sound Manager</li>
             </ul>
-
-            <a href="" class="cv-button">Download CV</a>
+            <button class="btn cv-button"><i class="fa fa-download"></i> Download CV</button>
 
         </div>
         <aside>
@@ -249,6 +253,14 @@
         $("#loader-container").fadeOut(1000);
     });
 
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
 </script>
 
 </body>

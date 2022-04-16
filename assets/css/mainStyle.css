@@ -7,9 +7,43 @@
 }
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     height: 60px;
+    width: 100%;
     background: #171515;
+}
+
+.progress-container {
+    width: 100%;
+    height: 3px;
+    background: #171515;
+}
+
+.progress-bar {
+    height: 3px;
+    background: #55a4c1;
+    width: 0%;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
+.cv-button {
+    position: absolute;
+    bottom: 175px;
+    left: 57px;
+    margin: auto;
 }
 
 body > main > section {
@@ -55,6 +89,8 @@ header > ul > li:hover {
 }
 
 #homePage {
+
+
     /*background: url("assets/image/design.jpg");*/
     /*background-size: cover;*/
     /*background-position: center;*/
@@ -71,22 +107,7 @@ header > ul > li:hover {
     background-position: center;
 }
 
-.cv-button {
-    text-decoration: none;
-    position: absolute;
-    bottom: 175px;
-    left: 57px;
-    margin: auto;
-    font-size: 20px;
-    width: 121px;
-    height: 25px;
-    border: 1px solid white;
-    border-radius: 8px;
-}
 
-.cv-button:hover {
-    color: #55a4c1;
-}
 
 .web-button{
     text-decoration: none;
