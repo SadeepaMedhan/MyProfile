@@ -78,19 +78,30 @@ header > ul {
     margin: 0;
 }
 
-header > ul > li {
+header > ul > li > a{
+    text-decoration: none;
+}
+header > ul > li{
+    text-decoration: none;
     padding: 15px 10px 0 10px;
     display: inline-block;
 }
 
-header > ul > li:hover {
+header > ul > li a:hover {
     cursor: pointer;
     color: deepskyblue;
 }
 
+.scroll-container{
+    scroll-behavior: smooth;
+}
+
+.scroll-page{
+    scroll-behavior: smooth;
+}
+
+
 #homePage {
-
-
     /*background: url("assets/image/design.jpg");*/
     /*background-size: cover;*/
     /*background-position: center;*/
@@ -98,7 +109,7 @@ header > ul > li:hover {
 }
 
 #about, #skills, #education, #project {
-    background: linear-gradient(to top, #121218, #0b1b42, #121218);
+    /*background: linear-gradient(to top, #121218, #0b1b42, #121218);*/
 }
 
 #contact {
@@ -197,6 +208,8 @@ body > main > section:nth-child(1) {
     background: rgba(0, 0, 0, 0);
     border: 1px solid rgba(255, 255, 255, 0.9);
     border-radius: 10px;
+    z-index: 5;
+
 }
 
 body > main > section:nth-child(1) > div:hover {
@@ -605,7 +618,9 @@ body > main > section:nth-child(10) {
 }
 
 .gallery_img:hover {
-    outline: 10px solid #55a4c1;
+    /*outline: 10px solid #55a4c1;*/
+    border: 6px solid;
+    border-image: linear-gradient(to right, #2bc7c3, #703de7) 1;
     transform: scale(1.05) translateY(-20px);
     z-index: 20;
 }
@@ -693,11 +708,11 @@ body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
     white-space: break-spaces;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > div {
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > a {
     height: 50px;
     width: 50px;
 }
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:hover {
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:hover {
     cursor: pointer;
 }
 
@@ -710,37 +725,37 @@ body > main > section:nth-child(12) > section > section:nth-child(2) > section {
     left: 2px;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(1) {
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(1) {
     background: url("../image/icon/github.png");
     background-size: cover;
     background-position: center;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(2) {
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(2) {
     background: url("../image/icon/facebook.png");
     background-size: cover;
     background-position: center;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(3) {
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(3) {
     background: url("../image/icon/linkedin.png");
     background-size: cover;
     background-position: center;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(4) {
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(4) {
     background: url("../image/icon/whatsapp.png");
     background-size: cover;
     background-position: center;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(5) {
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(5) {
     background: url("../image/icon/instagram.png");
     background-size: cover;
     background-position: center;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > div:nth-child(6) {
+body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(6) {
     background: url("../image/icon/twitter.png");
     background-size: cover;
     background-position: center;
