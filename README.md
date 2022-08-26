@@ -27,7 +27,7 @@
 ![App Screenshot](assets/image/home.png)
 
 ### About Page
-![App Screenshot](assets/image/about.png)
+![App Screenshot](assets/image/about.jpg)
 
 ### Skills Page
 ![App Screenshot](assets/image/skills.png)
