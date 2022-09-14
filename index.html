@@ -18,27 +18,29 @@
 </div>
 
 <header>
-
-    <h2>Sadeepa Medhan</h2>
-    <ul>
-        <li><a href="#homePage">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
+    <div id="navbar">
+        <h2 id="headerName">Sadeepa Medhan</h2>
+        <ul id="navList">
+            <li><a href="#homePage">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
     </div>
+
 </header>
 
 <main class="scroll-container">
     <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <a href="https://github.com/SadeepaMedhan" target="_blank"></a>
+        <a href="https://www.facebook.com/sadeepamedhan" target="_blank"></a>
+        <a href="https://linkedin.com/in/sadeepa-medhan-a718b7203" target="_blank"></a>
+        <a href="https://wa.me/+94711757823" target="_blank"></a>
     </section>
     <section id="homePage" class="scroll-page"><!--<h2>Home</h2>-->
         <div>
@@ -49,15 +51,13 @@
                     <span class="highLight">AND</span></p>
             </div>
             <ul>
-                <li>Software Engineer</li>
-                <li>Web Developer</li>
-                <li>Sound Manager</li>
+                <li>FullStack Developer</li>
             </ul>
             <button class="btn cv-button"><i class="fa fa-download"></i> Download CV</button>
 
         </div>
         <aside>
-            <img src="assets/image/myProf.png">
+            <!--            <img src="assets/image/myProf.png">-->
         </aside>
     </section>
     <hr style="border: black">
@@ -83,46 +83,34 @@
     <section id="skills" class="scroll-page">
         <h2><span class="highLight">HERE'RE MY</span> <br>
             SKILLS</h2>
-        <section>
-            <h3>Tools</h3>
-            <div></div>
-            <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+        <section class="skill-tools">
+            <h3 class="skillTitle">Tools</h3>
+            <div class="fadeUnderLine"></div>
+            <section class="skill-items">
+                <div class="item"><img src="assets/image/icon/ps.png" alt="a"><h4>PhotoShop</h4></div>
+                <div class="item"><img src="assets/image/icon/xd.png" alt="a"> <h4>Xd</h4></div>
+                <div class="item"><img src="assets/image/icon/figma.png" alt="a"> <h4>Figma</h4></div>
+                <div class="item"><img src="assets/image/icon/arduino.png" alt="a"><h4>Arduino</h4></div>
+                <div class="item"><img src="assets/image/icon/inteelllij.png" alt="a"><h4>IntelliJ</h4></div>
+                <div class="item"><img src="assets/image/icon/vs.png" alt="a"> <h4>VS</h4></div>
+
             </section>
-            <section>
-                <h4>PhotoShop</h4>
-                <h4>Xd</h4>
-                <h4>Figma</h4>
-                <h4>Arduino</h4>
-                <h4>IntelliJ</h4>
-                <h4>VS</h4>
+
+        </section>
+        <section class="skill-lang">
+            <h3 class="skillTitle">Languages</h3>
+            <div class="fadeUnderLine"></div>
+            <section class="skill-items">
+                <div class="item"><img src="assets/image/icon/java.png" alt="a"><h4>Java</h4></div>
+                <div class="item"><img src="assets/image/icon/mysql.png" alt="a"> <h4>MySQL</h4></div>
+                <div class="item"><img src="assets/image/icon/c_sharp.png" alt="a"> <h4>C#</h4></div>
+                <div class="item"><img src="assets/image/icon/html55.png" alt="a"><h4>HTML5</h4></div>
+                <div class="item"><img src="assets/image/icon/js.png" alt="a"><h4>JavaScript</h4></div>
+                <div class="item"><img src="assets/image/icon/python.png" alt="a"> <h4>Python</h4></div>
+
             </section>
         </section>
-        <section>
-            <h3>Languages</h3>
-            <div></div>
-            <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-            <section>
-                <h4>Java</h4>
-                <h4>MySQL</h4>
-                <h4>C#</h4>
-                <h4>HTML5</h4>
-                <h4>JavaScript</h4>
-                <h4>Python</h4>
-            </section>
-        </section>
+
     </section>
     <hr style="border: black">
     <section id="education" class="scroll-page">
@@ -179,7 +167,7 @@
             <div class="gallery">
                 <a href="myProjects/CSS/Animations/Case%201/index.html" target="_blank">
                     <img src="assets/image/pr03.jpg" alt="project1" class="gallery_img gallery_img-1 tooltip">
-<!--                    <span class="tooltipText">Rotate Animation</span>-->
+                    <!--                    <span class="tooltipText">Rotate Animation</span>-->
                 </a>
                 <a href="myProjects/CSS/Animations/Case%202/index.html" target="_blank">
                     <img src="assets/image/pr02.jpg" alt="project2" class="gallery_img gallery_img-2">
@@ -224,7 +212,7 @@
                 <h2>MORE INFORMATION</h2>
                 <ul>
                     <li>Address : "Yasiru", Eduwa, Palatuwa</li>
-                    <li>E mail  : sadeepamedhan823@gmail.com</li>
+                    <li>E mail : sadeepamedhan823@gmail.com</li>
                     <li>Contact : 0711757823</li>
                 </ul>
                 <section>
@@ -245,11 +233,13 @@
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script src="assets/jQuery/jquery-ui.min.js"></script>
 <script>
-    $(window).on('load',function(){
+    $(window).on('load', function () {
         $("#loader-container").fadeOut(1000);
     });
 
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function () {
+        myFunction()
+    };
 
     function myFunction() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;

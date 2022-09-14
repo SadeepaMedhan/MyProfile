@@ -15,10 +15,13 @@ header {
     background: #171515;
 }
 
+
 .progress-container {
+    position: absolute;
     width: 100%;
     height: 3px;
     background: #171515;
+    top: 60px;
 }
 
 .progress-bar {
@@ -61,7 +64,7 @@ h2 {
     font-size: 34px;
 }
 
-body > header > h2 {
+#headerName {
     position: absolute;
     font-weight: bold;
     font-size: 25px;
@@ -69,7 +72,7 @@ body > header > h2 {
 }
 
 /*----------navigation list-----------*/
-header > ul {
+#navList {
     position: absolute;
     right: 30px;
     font-size: 24px;
@@ -77,17 +80,16 @@ header > ul {
     list-style: none;
     margin: 0;
 }
-
-header > ul > li > a{
+#navList > li > a{
     text-decoration: none;
 }
-header > ul > li{
+#navList > li{
     text-decoration: none;
     padding: 15px 10px 0 10px;
     display: inline-block;
 }
 
-header > ul > li a:hover {
+#navList > li a:hover {
     cursor: pointer;
     color: deepskyblue;
 }
@@ -150,7 +152,7 @@ body > main > section:nth-child(2) > div > ul {
     line-height: 90px;
     overflow: hidden;
 }
-
+/*
 body > main > section:nth-child(2) > div > ul > li {
     position: relative;
     top: 0;
@@ -179,7 +181,7 @@ body > main > section:nth-child(2) > div > ul > li::after {
         left: 100%;
         margin: 0 -35px 0 35px;
     }
-}
+}*/
 
 /*-----my image-------*/
 body > main > section:nth-child(2) {
@@ -212,30 +214,30 @@ body > main > section:nth-child(1) {
 
 }
 
-body > main > section:nth-child(1) > div:hover {
+body > main > section:nth-child(1) > a:hover {
     cursor: pointer;
     background: deepskyblue;
     background-size: contain;
 }
 
-body > main > section:nth-child(1) > div {
+body > main > section:nth-child(1) > a {
     height: 100%;
     background-size: contain;
 }
 
-body > main > section:nth-child(1) > div:nth-child(1) {
+body > main > section:nth-child(1) > a:nth-child(1) {
     background-image: url("../image/icon/github.png");
 }
 
-body > main > section:nth-child(1) > div:nth-child(2) {
+body > main > section:nth-child(1) > a:nth-child(2) {
     background-image: url("../image/icon/linkedin.png");
 }
 
-body > main > section:nth-child(1) > div:nth-child(3) {
+body > main > section:nth-child(1) > a:nth-child(3) {
     background-image: url("../image/icon/facebook.png");
 }
 
-body > main > section:nth-child(1) > div:nth-child(4) {
+body > main > section:nth-child(1) > a:nth-child(4) {
     background-image: url("../image/icon/whatsapp.png");
 }
 
@@ -293,7 +295,7 @@ body > main > section:nth-child(4) > section:nth-child(3) > article > ul {
 }
 
 /*-- Skills --*/
-body > main > section:nth-child(6) > section:nth-child(2) > h3 {
+.skillTitle {
     position: absolute;
     width: fit-content;
     height: max-content;
@@ -306,7 +308,7 @@ body > main > section:nth-child(6) > section:nth-child(2) > h3 {
     top: 80px;
 }
 
-body > main > section:nth-child(6) > section:nth-child(2) > div {
+.fadeUnderLine {
     position: absolute;
     height: 3px;
     width: 200px;
@@ -317,136 +319,47 @@ body > main > section:nth-child(6) > section:nth-child(2) > div {
     top: 114px;
 }
 
-body > main > section:nth-child(6) > section:nth-child(2) {
+.skill-tools {
     position: relative;
+    border: 2px solid white;
+    height: 350px;
 }
 
-body > main > section:nth-child(6) > section:nth-child(2) > section {
+.skill-items {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    top: 160px;
+    top: 150px;
 }
 
-body > main > section:nth-child(6) > section > section > div:hover {
+.item:hover {
     cursor: pointer;
     border: 2px solid #55a4c1;
 }
 
-body > main > section:nth-child(6) > section > section > div {
-    width: 100px;
-    height: 100px;
+.item {
+    width: 50px;
+    height: 50px;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-body > main > section:nth-child(6) > section:nth-child(3) {
+.skill-lang {
     position: relative;
+    border: 2px solid blue;
+    height: 350px;
+
 }
 
-body > main > section:nth-child(6) > section:nth-child(3) > h3 {
-    position: absolute;
-    width: fit-content;
-    height: max-content;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    top: 250px;
-}
 
-body > main > section:nth-child(6) > section:nth-child(3) > div {
-    position: absolute;
-    height: 3px;
-    width: 200px;
-    background: linear-gradient(to left, #121218, white, #121218);
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 287px;
-}
-
-body > main > section:nth-child(6) > section:nth-child(3) > section {
+.skill-lang > section {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    top: 350px;
-}
-
-body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(1) {
-    background: url("../image/icon/ps.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(2) {
-    background: url("../image/icon/xd.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(3) {
-    background: url("../image/icon/figma.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(4) {
-    background: url("../image/icon/arduino.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(5) {
-    background: url("../image/icon/inteelllij.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(2) > section > div:nth-child(6) {
-    background: url("../image/icon/vs.png");
-    background-size: cover;
-    background-position: center;
+    top: 150px;
 }
 
 
-body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(1) {
-    background: url("../image/icon/java.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(2) {
-    background: url("../image/icon/mysql.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(3) {
-    background: url("../image/icon/c_sharp.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(4) {
-    background: url("../image/icon/html55.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(5) {
-    background: url("../image/icon/js.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(6) > section:nth-child(3) > section > div:nth-child(6) {
-    background: url("../image/icon/python.png");
-    background-size: cover;
-    background-position: center;
-}
 
 
 /*-- Education --*/

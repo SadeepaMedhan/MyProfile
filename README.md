@@ -21,6 +21,11 @@
  * [000WebHost URL](https://sadeepamedhan823.000webhostapp.com/)
 
 
+## Tech/framework used
+* HTML
+* CSS
+* JavaScript
+
 ## ScreenShots
 
 ### Home Page
