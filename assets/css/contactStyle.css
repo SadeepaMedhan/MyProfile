@@ -140,3 +140,63 @@ body > main > section:nth-child(12) > section > section:nth-child(2) > section >
     background-size: cover;
     background-position: center;
 }
+
+
+
+#footer{
+    position: relative;
+    background: #000000;
+    height: 5vh;
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    color: #5A6776;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer>p{
+    top: 0;
+    bottom: 0;
+}
+#icons {
+    width: 200px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    background: rgba(0, 0, 0, 0);
+
+}
+
+#icons > a:hover {
+    cursor: pointer;
+    background: #141E55;
+    background-size: contain;
+}
+
+#icons > a {
+    width: 25px;
+    background-size: cover;
+}
+
+#icons > a:nth-child(1) {
+    background-image: url("../image/icon/github.png");
+}
+
+#icons > a:nth-child(2) {
+    background-image: url("../image/icon/linkedin.png");
+}
+
+#icons > a:nth-child(3) {
+    background-image: url("../image/icon/facebook.png");
+}
+
+#icons > a:nth-child(4) {
+    background-image: url("../image/icon/whatsapp.png");
+}

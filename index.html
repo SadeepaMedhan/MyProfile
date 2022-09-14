@@ -91,14 +91,25 @@
     </section>
     <section id="a-c-pages">
         <div id="about-side">
-            <div id="frame">
+            <div id="frame" onclick="openPage('about.html')">
+                <p>Continue Exploring?</p>
                 <h3>About Me</h3>
             </div>
         </div>
         <div id="contact-side">
-            <div id="frame2">
+            <div id="frame2" onclick="openPage('contact.html')">
+                <p>Interested?</p>
                 <h3>Contact Me</h3>
             </div>
+        </div>
+    </section>
+    <section id="footer">
+        <p>© 2022 Sadeepa Medhan</p>
+        <div id="icons">
+            <a href="https://github.com/SadeepaMedhan" target="_blank"></a>
+            <a href="https://www.facebook.com/sadeepamedhan" target="_blank"></a>
+            <a href="https://linkedin.com/in/sadeepa-medhan-a718b7203" target="_blank"></a>
+            <a href="https://wa.me/+94711757823" target="_blank"></a>
         </div>
     </section>
 </main>
@@ -114,6 +125,10 @@
     window.onscroll = function () {
         myFunction()
     };
+
+    function openPage(pageUrl){
+        window.open(pageUrl,"_self");
+    }
 
     function myFunction() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
