@@ -1,3 +1,17 @@
+body{
+    animation: transition 1s;
+}
+
+@keyframes transition {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
 * {
     color: antiquewhite;
 }
@@ -114,11 +128,7 @@ h2 {
     /*background: linear-gradient(to top, #121218, #0b1b42, #121218);*/
 }
 
-#contact {
-    background: url("../image/backgroundDark.jpg");
-    background-size: cover;
-    background-position: center;
-}
+
 
 
 
@@ -137,7 +147,7 @@ body > main > section:nth-child(2) > div > div {
 }
 
 body > main > section:nth-child(2) > div > div > p {
-    font-size: 65px;
+    font-size: 5em;
 }
 
 body > main > section:nth-child(2) > div > ul {
@@ -145,7 +155,7 @@ body > main > section:nth-child(2) > div > ul {
     left: 163px;
     top: 397px;
     margin: auto;
-    font-size: 65px;
+    font-size: 5em;
     font-family: monospace;
     list-style: none;
     height: 90px;
@@ -252,50 +262,10 @@ body > main > section > h2 {
 
 
 /*-- About --*/
-body > main > section:nth-child(4) {
-    position: relative;
-}
 
-#imgFrame {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-   background: black;
-    opacity: 60%;
-}
-
-
-#about {
-    background: url("../image/myImg3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*background-position: center;*/
-    /*opacity: 50%;*/
-}
-
-body > main > section:nth-child(4) > section:nth-child(3) {
-    position: relative;
-}
-
-body > main > section:nth-child(4) > section:nth-child(3) > article {
-    position: absolute;
-    width: 50vw;
-    left: 8vw;
-    top: 25vh;
-    font-size: 25px;
-}
-
-body > main > section:nth-child(4) > section:nth-child(3) > article > ul {
-    list-style: none;
-}
 
 /*-- Skills --*/
-.skillTitle {
+/*.skillTitle {
     position: absolute;
     width: fit-content;
     height: max-content;
@@ -321,7 +291,6 @@ body > main > section:nth-child(4) > section:nth-child(3) > article > ul {
 
 .skill-tools {
     position: relative;
-    border: 2px solid white;
     height: 350px;
 }
 
@@ -346,7 +315,6 @@ body > main > section:nth-child(4) > section:nth-child(3) > article > ul {
 
 .skill-lang {
     position: relative;
-    border: 2px solid blue;
     height: 350px;
 
 }
@@ -362,7 +330,7 @@ body > main > section:nth-child(4) > section:nth-child(3) > article > ul {
 
 
 
-/*-- Education --*/
+!*-- Education --*!
 body > main > section:nth-child(8) > section:nth-child(2) {
     position: relative;
     display: flex;
@@ -454,34 +422,11 @@ body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2)
     background: url("../image/icon/icon-laptop.png");
     background-size: cover;
     background-position: center;
-}
+}*/
 
 /*-- Projects --*/
-body > main > section:nth-child(10) > section:nth-child(2) > div {
-    width: 250px;
-    height: 30px;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid white;
-}
 
-body > main > section:nth-child(10) > section > div > h3:hover {
-    cursor: pointer;
-    color: deepskyblue;
-}
-
-body > main > section:nth-child(10) > section > div > h3 {
-    font-size: 25px;
-}
-
-body > main > section:nth-child(10) > section:nth-child(2) {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 160px;
-}
-
-body > main > section:nth-child(10) {
+#project {
     position: relative;
 }
 
@@ -540,141 +485,71 @@ body > main > section:nth-child(10) {
 
 .view-button {
     position: absolute;
+    margin: auto;
     right: 76px;
     bottom: 58px;
-    margin: auto;
     font-size: 20px;
 }
 
 /*Contact*/
-body > main > section:nth-child(12) {
+#a-c-pages{
+    display: flex;
+    flex-direction: row;
+}
+#about-side{
+    background: white;
+    width: 50vw;
+    height: 100%;
     position: relative;
 }
-
-body > main > section:nth-child(12) > section {
-    width: 80vw;
-    height: 480px;
-    position: relative;
-    top: 214px;
+#frame{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    display: flex;
+    border: 2px solid #141E55;
+    width: 200px;
+    height: 200px;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(1) {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#frame>h3{
+    text-align: center;
+    color: #141E55;
+    font-size: 3em;
+    margin: 50px;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(1) > div > input {
-    width: 90%;
-    height: 40px;
-    border-radius: 10px;
-    border: 2px solid #afa7a7;
-    background: transparent;
-    font-family: monospace;
-    font-size: 20px;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(1) > div:nth-child(3) > input {
-    height: 80px;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(1) > div > button:hover {
-    cursor: pointer;
-    border: 3px solid #93ecec;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(1) > div > button {
-    width: 90%;
-    height: 40px;
-    border-radius: 15px;
-    background: transparent;
-    font-size: 20px;
-    border: 2px solid dodgerblue;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    left: 90px;
-    top: -25px;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > h2 {
-    position: absolute;
-    margin: auto;
-    top: 50px;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
-    font-size: 24px;
-    list-style: none;
-    position: absolute;
-    margin: auto;
-    top: 90px;
-    white-space: break-spaces;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a {
-    height: 50px;
-    width: 50px;
-}
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:hover {
+#frame:hover{
+    border-radius: 100%;
     cursor: pointer;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section {
+#contact-side{
+    background: #141E55;
+    width: 50vw;
+    height: 100%;
     position: relative;
+}
+#frame2{
+    position: absolute;
     margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    top: 376px;
-    left: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(1) {
-    background: url("../image/icon/github.png");
-    background-size: cover;
-    background-position: center;
+#frame2>h3{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin: 40px;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(2) {
-    background: url("../image/icon/facebook.png");
-    background-size: cover;
-    background-position: center;
+#frame2:hover{
+    border-radius: 100%;
+    cursor: pointer;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(3) {
-    background: url("../image/icon/linkedin.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(4) {
-    background: url("../image/icon/whatsapp.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(5) {
-    background: url("../image/icon/instagram.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(6) {
-    background: url("../image/icon/twitter.png");
-    background-size: cover;
-    background-position: center;
-}
-
-
 /*-------------------Responsive------------------*/
 @media all and (max-width: 1440px) {
     body > main > section:nth-child(2) > aside > img {

@@ -29,22 +29,22 @@
 ## ScreenShots
 
 ### Home Page
-![App Screenshot](assets/image/home.png)
+![App Screenshot](assets/image/a.png)
 
 ### About Page
-![App Screenshot](assets/image/about.jpg)
+![App Screenshot](assets/image/a.jpg)
 
 ### Skills Page
-![App Screenshot](assets/image/skills.png)
+![App Screenshot](assets/image/a.png)
 
 ### Education Page
-![App Screenshot](assets/image/education.png)
+![App Screenshot](assets/image/a.png)
 
 ### Projects Page
-![App Screenshot](assets/image/projects.png)
+![App Screenshot](assets/image/a.png)
 
 ### Contact Page
-![App Screenshot](assets/image/contact.png)
+![App Screenshot](assets/image/a.png)
 
 
 
