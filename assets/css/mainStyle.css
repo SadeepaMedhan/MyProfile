@@ -506,7 +506,147 @@ body > main > section > h2 {
 }
 
 @media all and (min-width: 425px) and (max-width: 768px) {
+    #navList {
+        display: none;
 
+    }
+
+    #my-name {
+        top: 225px;
+    }
+
+    #my-name > p {
+        font-size: 1.2em;
+    }
+
+    #my-img {
+        width: 100px;
+        height: 100px;
+        top: 0;
+        bottom: 60vh;
+        right: 0;
+        left: 0;
+    }
+
+    .cv-button {
+        bottom: 45vh;
+    }
+
+    #side-btn {
+        display: none;
+    }
+
+    body > main > section > h2 {
+        font-size: 20px;
+        left: 30px;
+    }
+
+    #project{
+        overflow-y: scroll;
+    }
+
+    .gallery_img {
+        width: 280px;
+        height: 130px;
+    }
+
+    .gallery {
+        width: 80vw;
+        margin: 5px;
+        top: 70px;
+        display: inline;
+    }
+    .btn {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .view-button {
+        position: sticky;
+        margin: auto;
+        right: 0;
+        bottom: 10px;
+        font-size: 10px;
+    }
+    .btn-project{
+        position: absolute;
+        width: 60px;
+        right: 0;
+        bottom: 0;
+    }
+
+    #a-c-pages {
+        flex-direction: column;
+    }
+
+    #about-side {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #contact-side {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #frame {
+        border: 4px solid #141E55;
+        width: 100px;
+        height: 100px;
+    }
+
+    #frame > p {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #frame > h3 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #frame2 {
+        border: 4px solid white;
+        width: 100px;
+        height: 100px;
+    }
+
+    #frame2 > p {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #frame2 > h3 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #footer {
+        height: 15vh;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #social-links{
+        width: 200px;
+        height: 20px;
+        right: 0;
+        left: 0;
+        bottom: 25vh;
+        padding-left: 0;
+    }
+
+    #social-links > a {
+        width: 20px;
+    }
+    #btn-scroll{
+        right: 25px;
+        bottom: 25px;
+    }
+    #btn-scroll>img{
+        width: 30px;
+    }
 }
 
 @media all and (min-width: 375px) and (max-width: 425px) {
@@ -798,7 +938,7 @@ body > main > section > h2 {
     }
 }
 
-@media all and (min-width: 320px) {
+@media all and (max-width: 320px) {
     #navList {
         display: none;
 

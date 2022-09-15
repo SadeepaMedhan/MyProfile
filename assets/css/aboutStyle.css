@@ -91,6 +91,95 @@ body{
 #icons > a:nth-child(4) {
     background-image: url("../image/icon/whatsapp.png");
 }
+
+/*-------------------Responsive------------------*/
+@media all and (max-width: 1440px) {
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1366px) {
+    #my-img{
+        height: auto;
+        width: 100vw;
+    }
+    #side{
+        position: absolute;
+        top: 300px;
+        height: 40vh;
+        width: 100vw;
+    }
+    #article{
+        margin: 20px;
+    }
+    #footer{
+        height: 15vh;
+        flex-direction: column-reverse;
+        bottom: 0;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+    #my-img{
+        height: auto;
+        width: 100vw;
+    }
+    #side{
+        position: absolute;
+        top: 250px;
+        height: 50vh;
+        width: 100vw;
+    }
+    #article{
+        margin: 20px;
+    }
+    #footer{
+        height: 15vh;
+        flex-direction: column-reverse;
+        bottom: 0;
+    }
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+    #my-img{
+        height: auto;
+        width: 100vw;
+    }
+    #side{
+        position: absolute;
+        top: 155px;
+        height: 65vh;
+        width: 100vw;
+    }
+    #article{
+        margin: 20px;
+    }
+    #footer{
+        height: 15vh;
+        flex-direction: column-reverse;
+        bottom: 0;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+    #my-img{
+        height: auto;
+        width: 100vw;
+    }
+    #side{
+        position: absolute;
+        top: 145px;
+        height: 65vh;
+        width: 100vw;
+    }
+    #article{
+        margin: 20px;
+    }
+    #footer{
+        height: 15vh;
+        flex-direction: column-reverse;
+        bottom: 0;
+    }
+}
 @media all and (max-width: 320px) {
     #my-img{
         height: auto;
