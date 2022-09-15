@@ -38,7 +38,7 @@
 <main class="scroll-container">
 
     <button id="btn-scroll" onclick="topFunction()">
-        <img src="assets/image/icon/up-icon.png" alt="" style="width: 40px">
+        <img src="assets/image/icon/up-icon.png" alt="">
     </button>
     <section id="homePage" class="scroll-page"><!--<h2>Home</h2>-->
         <div>
@@ -155,7 +155,6 @@
         document.getElementById("myBar").style.width = scrolled + "%";
     }
 
-
     let button = document.getElementById("btn-scroll");
 
     window.onscroll = function() {scrollFunction()};
@@ -168,7 +167,6 @@
         }
     }
 
-    // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;

@@ -46,7 +46,7 @@ header {
 }
 
 .btn {
-    background-color: DodgerBlue;
+    background-color: #1E90FFFF;
     border: none;
     color: white;
     padding: 12px 30px;
@@ -152,7 +152,7 @@ h2 {
 }
 
 .web-button:hover {
-    color: #72c6e5;
+    color: #5598b1;
 }
 
 /*-------my name---------*/
@@ -223,7 +223,7 @@ body > main > section:nth-child(2) {
     height: 350px;
     right: 8vw;
     bottom: 0;
-    top: 0px;
+    top: 0;
     margin: auto;
     opacity: 80%;
     border-radius: 50%;
@@ -284,6 +284,10 @@ body > main > section > h2 {
 
 #project {
     position: relative;
+
+    background: linear-gradient(-45deg, #141E55, #010202, #141E55, #000000);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
 }
 
 .gallery_img {
@@ -416,6 +420,9 @@ body > main > section > h2 {
     border-radius: 100%;
     cursor: pointer;
 }
+#btn-scroll>img{
+    width: 40px;
+}
 #btn-scroll{
     position: fixed;
     display: none;
@@ -425,7 +432,6 @@ body > main > section > h2 {
     bottom: 20px;
     z-index: 15;
     background-color: transparent;
-
 }
 #btn-scroll:hover{
 }
@@ -465,7 +471,7 @@ body > main > section > h2 {
 
 #icons > a:hover {
     cursor: pointer;
-    background: #141E55;
+    box-shadow: 1px 1px 10px 2px #43778b;
     background-size: contain;
 }
 
@@ -505,38 +511,30 @@ body > main > section > h2 {
 
 @media all and (min-width: 375px) and (max-width: 425px) {
 
-
-}
-
-@media all and (min-width: 320px) and (max-width: 375px) {
-
-}
-
-@media all and (max-width: 320px) {
     #navList {
         display: none;
 
     }
 
     #my-name {
-        top: 250px;
+        top: 225px;
     }
 
     #my-name > p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     #my-img {
-        margin: 0;
         width: 100px;
         height: 100px;
-        top: 100px;
-        right: 35vw;
+        top: 0;
+        bottom: 60vh;
+        right: 0;
+        left: 0;
     }
 
     .cv-button {
-        bottom: 40vh;
-        left: 70px;
+        bottom: 45vh;
     }
 
     #side-btn {
@@ -634,6 +632,313 @@ body > main > section > h2 {
         flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
+    }
+    #social-links{
+        width: 200px;
+        height: 20px;
+        right: 0;
+        left: 0;
+        bottom: 25vh;
+        padding-left: 0;
+    }
+
+    #social-links > a {
+        width: 20px;
+    }
+    #btn-scroll{
+        right: 25px;
+        bottom: 25px;
+    }
+    #btn-scroll>img{
+        width: 30px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+    #navList {
+        display: none;
+
+    }
+
+    #my-name {
+        top: 225px;
+    }
+
+    #my-name > p {
+        font-size: 1.2em;
+    }
+
+    #my-img {
+        width: 100px;
+        height: 100px;
+        top: 0;
+        bottom: 60vh;
+        right: 0;
+        left: 0;
+    }
+
+    .cv-button {
+        bottom: 45vh;
+    }
+
+    #side-btn {
+        display: none;
+    }
+
+    body > main > section > h2 {
+        font-size: 20px;
+        left: 30px;
+    }
+
+    #project{
+        overflow-y: scroll;
+    }
+
+    .gallery_img {
+        width: 280px;
+        height: 130px;
+    }
+
+    .gallery {
+        width: 80vw;
+        margin: 5px;
+        top: 70px;
+        display: inline;
+    }
+    .btn {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .view-button {
+        position: sticky;
+        margin: auto;
+        right: 0;
+        bottom: 10px;
+        font-size: 10px;
+    }
+    .btn-project{
+        position: absolute;
+        width: 60px;
+        right: 0;
+        bottom: 0;
+    }
+
+    #a-c-pages {
+        flex-direction: column;
+    }
+
+    #about-side {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #contact-side {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #frame {
+        border: 4px solid #141E55;
+        width: 100px;
+        height: 100px;
+    }
+
+    #frame > p {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #frame > h3 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #frame2 {
+        border: 4px solid white;
+        width: 100px;
+        height: 100px;
+    }
+
+    #frame2 > p {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #frame2 > h3 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #footer {
+        height: 15vh;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #social-links{
+        width: 200px;
+        height: 20px;
+        right: 0;
+        left: 0;
+        bottom: 25vh;
+        padding-left: 0;
+    }
+
+    #social-links > a {
+        width: 20px;
+    }
+    #btn-scroll{
+        right: 25px;
+        bottom: 25px;
+    }
+    #btn-scroll>img{
+        width: 30px;
+    }
+}
+
+@media all and (min-width: 320px) {
+    #navList {
+        display: none;
+
+    }
+
+    #my-name {
+        top: 225px;
+    }
+
+    #my-name > p {
+        font-size: 1.2em;
+    }
+
+    #my-img {
+        width: 100px;
+        height: 100px;
+        top: 0;
+        bottom: 60vh;
+        right: 0;
+        left: 0;
+    }
+
+    .cv-button {
+        bottom: 45vh;
+    }
+
+    #side-btn {
+        display: none;
+    }
+
+    body > main > section > h2 {
+        font-size: 20px;
+        left: 30px;
+    }
+
+    #project{
+        overflow-y: scroll;
+    }
+
+    .gallery_img {
+        width: 280px;
+        height: 130px;
+    }
+
+    .gallery {
+        width: 80vw;
+        margin: 5px;
+        top: 70px;
+        display: inline;
+    }
+    .btn {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .view-button {
+        position: sticky;
+        margin: auto;
+        right: 0;
+        bottom: 10px;
+        font-size: 10px;
+    }
+    .btn-project{
+        position: absolute;
+        width: 60px;
+        right: 0;
+        bottom: 0;
+    }
+
+    #a-c-pages {
+        flex-direction: column;
+    }
+
+    #about-side {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #contact-side {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #frame {
+        border: 4px solid #141E55;
+        width: 100px;
+        height: 100px;
+    }
+
+    #frame > p {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #frame > h3 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #frame2 {
+        border: 4px solid white;
+        width: 100px;
+        height: 100px;
+    }
+
+    #frame2 > p {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #frame2 > h3 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #footer {
+        height: 15vh;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #social-links{
+        width: 200px;
+        height: 20px;
+        right: 0;
+        left: 0;
+        bottom: 25vh;
+        padding-left: 0;
+    }
+
+    #social-links > a {
+        width: 20px;
+    }
+    #btn-scroll{
+        right: 25px;
+        bottom: 25px;
+    }
+    #btn-scroll>img{
+        width: 30px;
     }
 
 }

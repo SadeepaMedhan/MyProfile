@@ -67,7 +67,7 @@ body{
 
 #icons > a:hover {
     cursor: pointer;
-    background: #141E55;
+    box-shadow: 1px 1px 10px 2px #43778b;
     background-size: contain;
 }
 
