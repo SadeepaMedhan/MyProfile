@@ -60,7 +60,7 @@ header {
 }
 .cv-button {
     position: absolute;
-    bottom: 175px;
+    bottom: 155px;
     left: 57px;
     margin: auto;
 }
@@ -120,13 +120,13 @@ h2 {
 
 
 #homePage {
-    /*background: url("assets/image/design.jpg");*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    background: #121218;
-    background: linear-gradient(-45deg, #141E55, #0b3265, #214e5e, #1c5a4b);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background: url("../image/design.jpg");
+    background-size: cover;
+    background-position: center;
+    /*background: #121218;*/
+    /*background: linear-gradient(-45deg, #141E55, #134382, #19607d, #166f5a);*/
+    /*background-size: 400% 400%;*/
+    /*animation: gradient 15s ease infinite;*/
 }
 @keyframes gradient {
     0% {
@@ -169,42 +169,38 @@ body > main > section:nth-child(2) > div > ul {
     top: 397px;
     margin: auto;
     font-size: 4em;
-    font-family:'Titillium Web', sans-serif;
+    font-family: monospace;
     list-style: none;
     height: 90px;
     line-height: 90px;
     overflow: hidden;
 }
-/*
-body > main > section:nth-child(2) > div > ul > li {
-    position: relative;
-    top: 0;
-    animation: sliding 6s steps(3) infinite;
-}
 
-@keyframes sliding {
-    100% {
-        top: -270px;
-    }
-}
-
-body > main > section:nth-child(2) > div > ul > li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #121218;
-    border-left: 5px solid #55a4c1;
-    animation: typing 2s steps(16) infinite;
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid #72c6e5;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
 }
 
 @keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}*/
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #72c6e5 }
+}
+
+
+
 
 /*-----my image-------*/
 body > main > section:nth-child(2) {
@@ -213,8 +209,8 @@ body > main > section:nth-child(2) {
 
 body > main > section:nth-child(2) > aside > img {
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     right: 8vw;
     bottom: 0;
     top: 0;
@@ -279,168 +275,6 @@ body > main > section > h2 {
 }
 
 
-/*-- About --*/
-
-
-/*-- Skills --*/
-/*.skillTitle {
-    position: absolute;
-    width: fit-content;
-    height: max-content;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    top: 80px;
-}
-
-.fadeUnderLine {
-    position: absolute;
-    height: 3px;
-    width: 200px;
-    background: linear-gradient(to left, #121218, white, #121218);
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 114px;
-}
-
-.skill-tools {
-    position: relative;
-    height: 350px;
-}
-
-.skill-items {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    top: 150px;
-}
-
-.item:hover {
-    cursor: pointer;
-    border: 2px solid #55a4c1;
-}
-
-.item {
-    width: 50px;
-    height: 50px;
-    border: 1px solid white;
-    border-radius: 8px;
-}
-
-.skill-lang {
-    position: relative;
-    height: 350px;
-
-}
-
-
-.skill-lang > section {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    top: 150px;
-}
-
-
-
-
-!*-- Education --*!
-body > main > section:nth-child(8) > section:nth-child(2) {
-    position: relative;
-    display: flex;
-    height: 600px;
-    width: 68vw;
-    top: 144px;
-    bottom: 0;
-    right: 0;
-    left: 60px;
-    margin: auto;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section > section {
-    position: relative;
-    height: 202px;
-    width: 100%;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section > section > div {
-    position: absolute;
-    left: 0;
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    margin: auto;
-    border: 1px solid white;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section > section > p {
-    position: absolute;
-    font-size: 25px;
-    width: fit-content;
-    top: 12px;
-    left: 92px;
-    margin: auto;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section > section > section {
-    position: absolute;
-    height: 139px;
-    width: 6px;
-    left: 28px;
-    top: 62px;
-    background: white;
-    margin: auto;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(1) > div {
-    background: url("../image/icon/icons8-school-building-64.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(2) > div {
-    background: url("../image/icon/icons8-school-64.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(1) > section:nth-child(3) > div {
-    background: url("../image/icon/icons8-university-50.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > section:nth-child(1) > div {
-    background: url("../image/icon/icon2.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > section:nth-child(2) > div {
-    background: url("../image/icon/icon-laptop.png");
-    background-size: cover;
-    background-position: center;
-}*/
 
 /*-- Projects --*/
 
