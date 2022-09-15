@@ -51,10 +51,12 @@ header {
     padding: 12px 30px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .btn:hover {
-    background-color: RoyalBlue;
+    background-color: #141E55;
 }
 .cv-button {
     position: absolute;
@@ -435,51 +437,25 @@ body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2)
     height: 200px;
     border-radius: 2px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    position: absolute;
-    z-index: 10;
     outline-offset: 10px;
     transition: all 0.2s;
+    margin: 10px;
 }
 
 .gallery {
-    width: 1000px;
-    margin: 0 auto;
+    width: 90vw;
+    margin: 50px;
     position: relative;
-    top: 247px;
+    top: 100px;
+    display: inline-table;
 }
 
-.gallery_img-1 {
-    top: 0;
-    left: 0;
-}
-
-.gallery_img-2 {
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.gallery_img-3 {
-    top: 40px;
-    left: 20%;
-}
-
-.gallery_img-4 {
-    top: 60px;
-    left: 40%;
-}
-
-.gallery_img-5 {
-    top: 40px;
-    left: 60%;
-    z-index: 2;
-}
 
 .gallery_img:hover {
     /*outline: 10px solid #55a4c1;*/
     border: 6px solid;
     border-image: linear-gradient(to right, #2bc7c3, #703de7) 1;
-    transform: scale(1.05) translateY(-20px);
+    transform: scale(1) translateY(-10px);
     z-index: 20;
 }
 
@@ -512,6 +488,7 @@ body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2)
     border: 8px solid #141E55;
     width: 200px;
     height: 200px;
+    transition: border-radius 0.5s;
 }
 #frame>p{
     text-align: center;
@@ -529,6 +506,7 @@ body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2)
     border-radius: 100%;
     cursor: pointer;
 }
+
 #contact-side{
     background: #141E55;
     width: 50vw;
@@ -545,6 +523,7 @@ body > main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2)
     border: 8px solid white;
     width: 200px;
     height: 200px;
+    transition: border-radius 0.5s;
 }
 #frame2>p{
     text-align: center;
