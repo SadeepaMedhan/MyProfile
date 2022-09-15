@@ -15,6 +15,7 @@ body{
 
 #my-img{
     height: 100vh;
+    width: auto;
     position: absolute;
     margin: auto;
     right: 0;
@@ -89,4 +90,24 @@ body{
 
 #icons > a:nth-child(4) {
     background-image: url("../image/icon/whatsapp.png");
+}
+@media all and (max-width: 320px) {
+    #my-img{
+        height: auto;
+        width: 100vw;
+    }
+    #side{
+        position: absolute;
+        top: 135px;
+        height: 65vh;
+        width: 100vw;
+    }
+    #article{
+        margin: 20px;
+    }
+    #footer{
+        height: 15vh;
+        flex-direction: column-reverse;
+       bottom: 0;
+    }
 }

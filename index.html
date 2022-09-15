@@ -36,15 +36,13 @@
 </header>
 
 <main class="scroll-container">
-    <section>
-        <a href="https://github.com/SadeepaMedhan" target="_blank"></a>
-        <a href="https://www.facebook.com/sadeepamedhan" target="_blank"></a>
-        <a href="https://linkedin.com/in/sadeepa-medhan-a718b7203" target="_blank"></a>
-        <a href="https://wa.me/+94711757823" target="_blank"></a>
-    </section>
+
+    <button id="btn-scroll" onclick="topFunction()">
+        <img src="assets/image/icon/up-icon.png" alt="" style="width: 40px">
+    </button>
     <section id="homePage" class="scroll-page"><!--<h2>Home</h2>-->
         <div>
-            <div>
+            <div id="my-name">
                 <p ><span class="highLight">HELLO, I'M</span><br>
                     SADEEPA MEDHAN<br>
                     SUGEESHWARA<br>
@@ -58,7 +56,13 @@
 
         </div>
         <aside>
-            <img src="assets/image/myProf-modified.png">
+            <img id="my-img" src="assets/image/myProf-modified.png">
+            <div id="social-links">
+                <a href="https://github.com/SadeepaMedhan" target="_blank"></a>
+                <a href="https://www.facebook.com/sadeepamedhan" target="_blank"></a>
+                <a href="https://linkedin.com/in/sadeepa-medhan-a718b7203" target="_blank"></a>
+                <a href="https://wa.me/+94711757823" target="_blank"></a>
+            </div>
         </aside>
     </section>
 
@@ -68,37 +72,36 @@
         <h2><span class="highLight">LATEST PROJECTS</span> <br>
             I'VE WORKED ON
         </h2>
-        <section>
-            <div class="gallery">
-                <a href="https://github.com/SadeepaMedhan/Car-Rental-System.git" target="_blank">
-                    <img src="assets/image/carRentalSystem.jpg" alt="project1" class="gallery_img gallery_img-1">
-                </a>
-                <a href="https://github.com/SadeepaMedhan/Textile-Management-System.git" target="_blank">
-                    <img src="assets/image/textTileManagement.png" alt="project2" class="gallery_img gallery_img-2">
-                </a>
-                <a href="https://github.com/SadeepaMedhan/Student-Managment-System.git" target="_blank">
-                    <img src="assets/image/pr05.png" alt="project3" class="gallery_img gallery_img-3">
-                </a>
-                <a href="https://sadeepamedhan.github.io/Single-Page-POS-Application/" target="_blank">
-                    <img src="assets/image/pos-ScreenShot.png" alt="project4" class="gallery_img gallery_img-4">
-                </a>
-                <a href="https://github.com/SadeepaMedhan/chat-app.git" target="_blank">
-                    <img src="assets/image/chatList.png" alt="project5" class="gallery_img gallery_img-5">
-                </a>
-                <a href="https://github.com/SadeepaMedhan/Vehicle-Parking-System" target="_blank">
-                    <img src="assets/image/pr04.png" alt="project3" class="gallery_img gallery_img-3">
-                </a>
-                <a href="https://sadeepamedhan.github.io/Single-Page-POS-Application/" target="_blank">
-                    <img src="assets/image/pr01.jpg" alt="project4" class="gallery_img gallery_img-4">
-                </a>
-                <a href="https://github.com/SadeepaMedhan/Textile-Management-System.git" target="_blank">
-                    <img src="assets/image/pr02.jpg" alt="project5" class="gallery_img gallery_img-5">
-                </a>
-            </div>
-        </section>
+        <div class="gallery">
+            <a href="https://github.com/SadeepaMedhan/Car-Rental-System.git" target="_blank">
+                <img src="assets/image/carRentalSystem.jpg" alt="project1" class="gallery_img gallery_img-1">
+                <span class="tooltip-text">Car-Rental-System</span>
+            </a>
+            <a href="https://github.com/SadeepaMedhan/Textile-Management-System.git" target="_blank">
+                <img src="assets/image/textTileManagement.png" alt="project2" class="gallery_img gallery_img-2">
+            </a>
+            <a href="https://github.com/SadeepaMedhan/Student-Managment-System.git" target="_blank">
+                <img src="assets/image/pr05.png" alt="project3" class="gallery_img gallery_img-3">
+            </a>
+            <a href="https://sadeepamedhan.github.io/Single-Page-POS-Application/" target="_blank">
+                <img src="assets/image/pos-ScreenShot.png" alt="project4" class="gallery_img gallery_img-4">
+            </a>
+            <a href="https://github.com/SadeepaMedhan/chat-app.git" target="_blank">
+                <img src="assets/image/chatList.png" alt="project5" class="gallery_img gallery_img-5">
+            </a>
+            <a href="https://github.com/SadeepaMedhan/Vehicle-Parking-System" target="_blank">
+                <img src="assets/image/pr04.png" alt="project3" class="gallery_img gallery_img-3">
+            </a>
+            <a href="https://sadeepamedhan.github.io/Single-Page-POS-Application/" target="_blank">
+                <img src="assets/image/pr01.jpg" alt="project4" class="gallery_img gallery_img-4">
+            </a>
+            <a href="https://github.com/SadeepaMedhan/Textile-Management-System.git" target="_blank">
+                <img src="assets/image/pr02.jpg" alt="project5" class="gallery_img gallery_img-5">
+            </a>
+        </div>
 
         <a href="myProjects/CSS/index.html" class="view-button" target="_blank">
-            <button class="btn">
+            <button class="btn btn-project">
                 view more
             </button>
         </a>
@@ -117,6 +120,7 @@
             </div>
         </div>
     </section>
+
     <section id="footer">
         <p>© 2022 Sadeepa Medhan</p>
         <div id="icons">
@@ -149,6 +153,25 @@
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+
+    let button = document.getElementById("btn-scroll");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 </script>
 
