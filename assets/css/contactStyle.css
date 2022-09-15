@@ -13,142 +13,58 @@ body{
     }
 }
 
-
-body > main > section:nth-child(12) {
-    position: relative;
-}
-
-body > main > section:nth-child(12) > section {
-    width: 80vw;
-    height: 480px;
-    position: relative;
-    top: 214px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: flex;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(1) {
-    width: 50%;
-    height: 100%;
+#contact{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(1) > div > input {
-    width: 90%;
-    height: 40px;
-    border-radius: 10px;
-    border: 2px solid #afa7a7;
-    background: transparent;
-    font-family: monospace;
-    font-size: 20px;
+#contact>h2{
+    margin: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(1) > div:nth-child(3) > input {
-    height: 80px;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(1) > div > button:hover {
-    cursor: pointer;
-    border: 3px solid #93ecec;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(1) > div > button {
-    width: 90%;
-    height: 40px;
-    border-radius: 15px;
-    background: transparent;
-    font-size: 20px;
-    border: 2px solid dodgerblue;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    left: 90px;
-    top: -25px;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > h2 {
-    position: absolute;
-    margin: auto;
-    top: 50px;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > ul {
-    font-size: 24px;
-    list-style: none;
-    position: absolute;
-    margin: auto;
-    top: 90px;
-    white-space: break-spaces;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a {
-    height: 50px;
-    width: 50px;
-}
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:hover {
-    cursor: pointer;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section {
-    position: relative;
-    margin: auto;
+.text-field{
     display: flex;
-    justify-content: space-evenly;
-    top: 376px;
-    left: 2px;
+    flex-direction: column;
 }
 
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(1) {
-    background: url("../image/icon/github.png");
-    background-size: cover;
-    background-position: center;
+#form{
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(2) {
-    background: url("../image/icon/facebook.png");
-    background-size: cover;
-    background-position: center;
+.input-field{
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    font-size: 1.5em;
+    margin-bottom: 40px;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(3) {
-    background: url("../image/icon/linkedin.png");
-    background-size: cover;
-    background-position: center;
+#text{
+    height: 100px;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(4) {
-    background: url("../image/icon/whatsapp.png");
-    background-size: cover;
-    background-position: center;
+#btn-send{
+    width: 100px;
+    height: 30px;
+    background: #141E55;
+    border-radius: 15px;
+    color: white;
+    border: 0;
 }
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(5) {
-    background: url("../image/icon/instagram.png");
-    background-size: cover;
-    background-position: center;
-}
-
-body > main > section:nth-child(12) > section > section:nth-child(2) > section > a:nth-child(6) {
-    background: url("../image/icon/twitter.png");
-    background-size: cover;
-    background-position: center;
-}
-
-
 
 #footer{
     position: relative;
     background: #000000;
     height: 5vh;
     width: 100%;
-    margin: auto;
+    margin: 0;
     bottom: 0;
     color: #5A6776;
     font-family: 'Source Sans Pro', sans-serif;
