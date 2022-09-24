@@ -27,7 +27,7 @@ body{
     height: 100vh;
     width: 50vw;
     color: white;
-    font-family: 'Lobster', cursive;
+    font-family: Segoe UI;
 }
 #article{
     margin: 100px;
